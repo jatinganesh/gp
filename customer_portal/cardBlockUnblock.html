@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Card Block/ Unblock</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <style>
+        body {
+       
+            border: 0px solid rgb(19, 12, 10);
+            margin: 0px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .pb { 
+            background-color: rgb(43, 107, 226); 
+            position: fixed;
+            top:0px;
+            width:100%;
+            height:100px;
+            z-index: 2;
+            }
+            #compName {
+        font-size: 2em;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px rgb(146, 145, 145);
+        
+    }
+    .fix {
+        position:sticky;
+        top:0px;
+    }
+    .navbar {
+        border:3px solid rgba(0, 0, 0, 0.459);
+    }
+        h1 {
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            left:37%
+            
+            
+        }
+        #cl {
+            float:left;
+            
+        }
+        header {
+            z-index: 1;
+        }
+        
+     
+        #article {
+            display: block;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            background:rgba(74, 157, 212, 0.116);
+            font-size: 1.6em;         
+            width: 250px;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto; 
+            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
+            
+        }
+        footer {
+            background-color: rgb(185, 185, 185);
+            height:80px;
+            padding:20px 0px 20px 50px;
+            font-size: 20px;
+            clear:both;
+        }
+        .foot {
+            padding:0px 30px 0px 60px;
+        }
+        h3{
+            font-size: 35px;
+            margin-top: 200px;
+        }
+        #aa {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    #ab {
+        margin-top: 50px;
+        height: 100px;
+        width:100%;
+    }
+    #ac {
+        width:50%;
+        border-radius: 5px;
+    }
+    .rest {
+        width:65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    </style>
+    
+</head>             
+
+<body >
+
+        <!------------------------------------------------------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Dashboard_4.html">
+       <img src="logo.png" width="150px" height="100px">   
+        <span id="compName">Company Name</span><br>
+
+    
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Dashboard_4.html">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Overview
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="profilepage.html">View Profile</a></li>
+              <li><a class="dropdown-item" href="accountSummary.html">Account Summary</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Accounts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="StatementDownload.html">Statement Download</a></li>
+              <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Payment
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="payment_1.html">Make Payment</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Card Details
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="viewCard.html">View Card</a></li>
+              <li><a class="dropdown-item" href="changePin.html">Change pin</a></li>
+              <li><a class="dropdown-item" href="cardBlockUnblock.html">Card Block/Unblock</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Customer Support
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+              <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<!------------------------------------------------------------------------>
+
+
+   
+    <div style='transform: scale(0.65); position: relative; top: -100px;'>
+        <h3>What would you like to do?</h3>
+        <br>
+      
+        <div id='block-11' style='padding: 10px;'>
+          <label for='option-11' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='6/24' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Block Card</label>
+        </div>
+        <br>
+
+      
+        <div id='block-12' style='padding: 10px;'>
+          <label for='option-12' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Unblock Card</label>
+        </div>
+        
+
+        
+      </div>
+
+      <div class="rest">
+        <section id="aa">Please enter the reason for doing so</section>
+        <input type="text" placeholder="Enter reason here" id="ab">
+        <a href="Dashboard_4.html">
+        <button type="button" id="article" >Submit</button>
+        </a>
+    </div>
+   
+    
+    
+
+    <footer>
+        <span>Copyright &copy; 2021 Company Name</span>
+        <span class="foot">Disclaimer</span>
+        <span class="foot">Privacy Policy</span>
+        <span class="foot">Code of Commitment</span>
+        <span class="foot">Responsible disclosure Policy</span>
+    </footer>
+
+    <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+<script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+<script src=""></script>
+
+
+</body>

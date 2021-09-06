@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.pb { background-color: rgb(125, 123, 255);  
+     }
+
+#dp { float:right;
+    border-radius: 70px;
+ }
+
+h1 {
+    display: block;
+    color: rgb(242, 243, 152);
+    background-color: rgb(125, 123, 255);
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.nav{
+    background-color: blue;
+    margin: 2.5% ;
+    padding: 1.5%;            
+}
+
+div.nav span {
+    background-color: rgb(248, 214, 255);
+    margin: 2%;
+    padding: 1%;
+}
+
+div.upd {
+    
+    background-color: burlywood;
+    max-width: 150px;
+    padding: 2%;
+    margin: 10px;
+}
+div.upd > span {
+    display: block;
+    background-color: rgb(255, 249, 213);
+    margin: 20px;
+    padding: 10px;
+              
+}
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Statement Download</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <style>
+        body {
+       
+            border: 0px solid rgb(19, 12, 10);
+            margin: 0px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            z-index: 1;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
+            #compName {
+        font-size: 2em;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px rgb(146, 145, 145);
+        
+    }
+    .fix {
+        position:sticky;
+        top:0px;
+    }
+    .navbar {
+        border:3px solid rgba(0, 0, 0, 0.459);
+    }
+        h1 {
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            left:37%
+        }
+
+        h2{
+            margin-left: 260px;
+        }
+        
+/* --------------------------------------------*/
+.dropbtn {
+  background-color: rgba(151, 91, 201, 0.116);
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: 2px solid black;
+  margin:47px 10px 10px 10px;
+  border-radius: 5px;
+  position: -webkit-sticky;
+position: sticky;
+box-shadow: 5px 10px 20px rgba(255, 255, 255, 0);
+top: 0px;
+font-size: 20px;
+font-weight: bold;
+
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #54269e71;}
+        /* --------------------------------------------*/
+
+       
+        
+     
+        .but2 {
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            background:rgba(74, 157, 212, 0.116);
+                     
+            width: 200px;
+            border-radius: 5px;
+            
+            margin-left: auto;
+            margin-right: auto;
+
+            
+        }
+        footer {
+            background-color: rgb(185, 185, 185);
+            height:80px;
+            padding:20px 0px 20px 50px;
+            font-size: 20px;
+            clear:both;
+        }
+        .foot {
+            padding:0px 30px 0px 60px;
+        }
+
+        .container {
+            background-color: darkcyan;
+            width:30%;
+            height:60px;
+            text-align: center;
+            border-radius: 10px;
+            vertical-align: middle;
+            padding:10px;
+            font-size: 24px;
+            margin:80px 30px 30px 250px;
+            color: white;
+            border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 8px 8px 8px #888888;
+
+        }
+        .db{
+            position:relative;
+            bottom:0px;
+        }
+        .r {
+            margin-top: 80px;
+        }
+        .ultimate{
+            margin-left: 260px;
+        }
+
+
+    </style>
+    
+</head>             
+
+<body >
+
+    
+            <!------------------------------------------------------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Dashboard_4.html">
+       <img src="logo.png" width="150px" height="100px">   
+        <span id="compName">Company Name</span><br>
+
+    
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Dashboard_4.html">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Overview
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="profilepage.html">View Profile</a></li>
+              <li><a class="dropdown-item" href="accountSummary.html">Account Summary</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Accounts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="StatementDownload.html">Statement Download</a></li>
+              <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Payment
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="payment_1.html">Make Payment</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Card Details
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="viewCard.html">View Card</a></li>
+              <li><a class="dropdown-item" href="changePin.html">Change pin</a></li>
+              <li><a class="dropdown-item" href="cardBlockUnblock.html">Card Block/Unblock</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Customer Support
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+              <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<!------------------------------------------------------------------------>
+
+
+    <a href="#">
+        <div class="container r">
+            <span class="db">Download Recent Statement</span>
+            <img src="downloadIcon.png" height="40px" width="40px" class="di">
+        </div>
+    </a>
+    <br><br>
+    <br> <br>
+       <h2>Find Account Statement</h2>
+
+
+    <div class="ultimate">
+    <div class="dropdown">
+        <button class="dropbtn but2">Month</button>
+        <div class="dropdown-content">
+        <a>January</a><a>February</a>
+        <a>March</a><a>April</a>
+        <a>May</a><a>June</a>
+        <a>July</a><a>August</a>
+        <a>September</a><a>October</a>
+        <a>November</a><a>December</a>
+        </div>
+    </div>
+    <br>
+    <div class="dropdown">
+        <button class="dropbtn but2">Year</button>
+        <div class="dropdown-content">
+        <a>2010</a><a>2011</a>
+        <a>2012</a><a>2013</a>
+        <a>2014</a><a>2015</a>
+        <a>2016</a><a>2017</a>
+        <a>2018</a><a>2019</a>
+        <a>2020</a><a>2021</a>
+        
+        </div>
+    </div>
+    </div>
+
+
+
+    <a href="#">
+        <div class="container">
+            <span class="db">Download Selected Statement</span>
+            <img src="downloadIcon.png" height="40px" width="40px" class="di">
+        </div>
+    </a>
+
+    
+
+    <footer>
+        <span>Copyright &copy; 2021 Company Name</span>
+        <span class="foot">Disclaimer</span>
+        <span class="foot">Privacy Policy</span>
+        <span class="foot">Code of Commitment</span>
+        <span class="foot">Responsible disclosure Policy</span>
+    </footer>
+
+    <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+    <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+    <script src=""></script>
+
+</body>
