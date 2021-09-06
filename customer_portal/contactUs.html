@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Contact Us</title>
+<link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+
+<style>
+    
+    * {
+        box-sizing: border-box;
+        margin:0px;
+        padding:0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    #compName {
+        font-size: 2em;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px rgb(146, 145, 145);
+        
+    }
+    .fix {
+        position:sticky;
+        top:0px;
+    }
+    .navbar {
+        border:3px solid rgba(0, 0, 0, 0.459);
+    }
+   
+    section {
+        padding-top: 15%;
+        margin-bottom: 50px;
+    }
+    section {
+        font-weight: bold;
+    }
+    #complaint {
+        margin-top: 50px;
+        height: 100px;
+        width:100%;
+    }
+    #compBut {
+        width:100%;
+        border-radius: 5px;
+    }
+    .mail {
+        
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .img {
+        background-color: wheat;
+        float:right;
+        border-radius: 30px;
+        clear:both;
+        margin-top: 10%;
+    }
+   @media (max-width: 768px)
+   {
+       .img{
+        position:static;   
+        margin-left: auto;
+           margin-right: auto;
+          
+       }
+   }
+   .stick {
+       position: sticky;
+       top:0px;
+   }
+  
+   footer {
+            background-color: rgb(185, 185, 185);
+            height:80px;
+            padding:20px 0px 20px 50px;
+            font-size: 20px;
+            clear:both;
+            margin-top: 50px;
+        }
+        .foot {
+            padding:0px 30px 0px 60px;
+        }
+    .fixy {
+        position: fixed;
+        right:0px;
+        top:30%;
+    }
+    .b {
+            display: block;
+            margin-top: 150px;
+            margin-bottom: 20px;
+            background:rgba(74, 157, 212, 0.116);
+            font-size: 1.6em;         
+            width: 250px;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto; 
+            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
+            clear: both;
+            
+        }
+  
+</style>
+
+</head>
+
+<body>
+
+        <!------------------------------------------------------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Dashboard_4.html">
+       <img src="logo.png" width="150px" height="100px">   
+        <span id="compName">Company Name</span><br>
+
+    
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Dashboard_4.html">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Overview
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="profilepage.html">View Profile</a></li>
+              <li><a class="dropdown-item" href="accountSummary.html">Account Summary</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Accounts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="StatementDownload.html">Statement Download</a></li>
+              <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Payment
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="payment_1.html">Make Payment</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Card Details
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="viewCard.html">View Card</a></li>
+              <li><a class="dropdown-item" href="changePin.html">Change pin</a></li>
+              <li><a class="dropdown-item" href="cardBlockUnblock.html">Card Block/Unblock</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Customer Support
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+              <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<!------------------------------------------------------------------------>
+
+    
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-6 col-sm-12">
+                <section>Please drop a message/ query/complaint right here and we will get back to you shortly</section>
+                <input type="text" placeholder="Enter message here" id="complaint">
+                <button type="button" id="compBut">Submit</button>
+            </div>
+        
+        
+            <div class="row col-md-6 col-sm-12 mail">
+                <section>Alternatively, reach us at:</section>
+                <article> Ph.no: 8971128964 </article>
+                <article> Email: company@comp.co.in </article>
+            </div>
+        </div>
+    </div>
+    <div class="img fixy">
+    <img src="chatbot.png" height="100px" width="100px">
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <footer>
+        <span>Copyright &copy; 2021 Company Name</span>
+        <span class="foot">Disclaimer</span>
+        <span class="foot">Privacy Policy</span>
+        <span class="foot">Code of Commitment</span>
+        <span class="foot">Responsible disclosure Policy</span>
+    </footer>
+    <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+<script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+<script src=""></script>
+</body>
+</html>
