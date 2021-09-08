@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration_3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\admin portal\admin_hf_styles.css">
+
+<style>
+/*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+
+#preview {
+    background-color: grey;
+    height:500px;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    z-index: 0;
+    border: 2px solid rgba(61, 61, 61, 0.432);
+}
+#prew-title, #prew-print, #prew-share {
+    position: absolute;
+    border: 2px solid rgb(24, 24, 24);
+    padding:10px;
+    background-color: rgb(173, 173, 173);
+    min-width: 70px;
+    border-radius:5px;
+    text-align: center;
+}
+#prew-print, #prew-share {
+    font-weight: 600;
+
+}
+#prew-title{
+    top: 20px;
+    left: 39%;
+    border: none;
+    box-shadow: 1px 1px 5px 3px; 
+}
+#prew-print{bottom: 5px; left: 5px;}
+#prew-share{bottom: 5px; right: 5px;}
+#mini-preview {
+    width:95%;
+    height:350px;
+    background-color: whitesmoke;
+    margin: 80px auto 0px;
+    box-shadow: 3px 3px 3px inset;
+    border-radius: 5px;
+    overflow: scroll;
+}
+#mini-preview .p-text{
+    font-size:20px;
+    margin-left:35px;
+    margin-bottom: 5px;
+}
+#mini-preview .p-title{
+    font-size:25px;
+    margin-left:15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#mini-preview .p-top {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+#mini-preview .prew-img{
+    display: block;
+    margin:5px auto 10px;
+}
+#reg3_button-section {
+    margin-top: 220px;
+}
+#reg3_button-section .btn{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#reg3_button-section .btn button {
+    width:240px;
+    height:60px;
+    box-shadow: 1px 1px 3px black;
+    font-size: 20px;
+}
+@media (max-width:767px){
+
+    #reg3_button-section {
+    margin-top: 0px;
+}
+}
+
+
+/*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
+ 
+
+</style>
+
+</head> 
+
+<body>
+
+    <!----------------------HEADER START------------------------>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="logo.png" width="150px" height="100px">   
+        
+
+    
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Database</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Card Inventory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Upload Inventory</a></li>
+                <li><a class="dropdown-item" href="#">File Status Report</a></li>
+                <li><a class="dropdown-item" href="#">Inventory/Kit Report</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Settings and rules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Update Credit Limit</a></li>
+                <li><a class="dropdown-item" href="#">Upload Credit Limit</a></li>
+                <li><a class="dropdown-item" href="#">Billing Cycle</a></li>
+                <li><a class="dropdown-item" href="#">Payment Due Date</a></li>
+                <li><a class="dropdown-item" href="#">Interest Setting</a></li>
+                <li><a class="dropdown-item" href="#">Minimum Payment</a></li>
+                <li><a class="dropdown-item" href="#">Fees Setting</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Commission</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reports
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Transaction Success Report</a></li>
+                <li><a class="dropdown-item" href="#">Transaction Log Report</a></li>
+                <li><a class="dropdown-item" href="#">Card Reprt</a></li>
+                <li><a class="dropdown-item" href="#">Overdue Statement</a></li>
+                <li><a class="dropdown-item" href="#">Daily Collection Report</a></li>
+                <li><a class="dropdown-item" href="#">Interest collected</a></li>
+                <li><a class="dropdown-item" href="#">Late Fees Earned</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Earned</a></li>
+                <li><a class="dropdown-item" href="#">Refund Report</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Recon Report</a></li>
+                
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+            </li>
+              
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header> <!----------------------HEADER END------------------------>
+
+<!----------------------MAIN BODY START------------------------>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7" id="preview">
+            <div id="prew-title">Registration Preview</div>
+            <div id="mini-preview">
+                <div class="p-top">Customer Information</div>
+                <div class="p-title">Basic Information</div>
+                <div class="p-text">First Name: Ramesh</div>
+                <div class="p-text">Last Name: Kumar</div>
+                <div class="p-text">Gender: Male</div>
+                <div class="p-text">Date Of Birth: 29 January 1978</div>
+                <div class="p-text">Mobile No: 8974456874</div>
+                <div class="p-text">Email ID: ramesh123@gmail.com</div>
+                <div class="p-title">Address</div>
+                <div class="p-text">Contact Address: #123, James street, Bel Circle</div>
+                <div class="p-text">Permanent Address: #123, James street, Bel Circle</div>
+                <div class="p-text">Country: India</div>
+                <div class="p-text">State: Karnataka</div>
+                <div class="p-text">City: Bangalore</div>
+                <div class="p-text">Pin code: 560077</div>
+                <div class="p-title">Upload Information</div>
+                <div class="p-text">ID Proof Type: Aadhar Card</div>
+                <img src="Aadhar_front.PNG" width="60%" height="90%" class="prew-img">
+                <br>
+                <img src="Aadhar_back.PNG" width="60%" height="90%" class="prew-img">
+            </div>
+            <div id="prew-print">Print</div>
+            <div id="prew-share">Share</div>
+        </div>
+        <div class="col-md-5">
+            <div id="reg3_button-section">
+                <div class="btn"><a href="Registration_2.html"><button id="r3_b1">Edit Registration</button></a></div>
+                <div class="btn"><a href="dashboard_admin.html"><button id="r3_b2">Confirm Registration</button></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+
+<!----------------------MAIN BODY END-------------------------->
+
+    <!----------------------FOOTER START------------------------>
+
+<footer>
+    <span class="foot">Copyright &copy; 2021 Company Name</span>
+    <span class="foot">Disclaimer</span>
+    <span class="foot">Privacy Policy</span>
+    <span class="foot">Code of Commitment</span>
+    <span class="foot">Responsible disclosure Policy</span>
+</footer><!----------------------FOOTER END------------------------>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+            
+            
+</body>
+</html>

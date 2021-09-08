@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>set_limit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\admin portal\admin_hf_styles.css">
+
+<style>
+/*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+#row1{
+    margin-top: 80px;
+}
+.row {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#prev-lim, #set-lim {
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 20px;
+}
+#set-lim-value {
+    max-width: 400px;
+}
+.fr {
+    clear:both;
+    float:right;
+    margin-right: 10%;
+}
+#h2_sl {
+    clear: both;
+    margin:100px auto 50px;
+    font-weight: 600;
+}
+#sl_comment {
+    width:60%;
+    font-weight: 600;
+    min-height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.sl_button button{
+    width:150px;
+    padding:8px;
+    border-radius: 5px;
+    
+}
+#sl_btn_1 button {
+    float: left;
+}
+#sl_btn_2 button {
+    float: right;
+    margin-bottom: 80px;
+}
+
+@media (max-width:767px) {
+    #sl_comment {
+        width:80%;
+        min-height:100px;
+}
+#set-lim-value {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+/*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
+ 
+
+</style>
+
+</head> 
+
+<body>
+
+    <!----------------------HEADER START------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="logo.png" width="150px" height="100px">   
+        
+
+    
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Database</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Card Inventory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Upload Inventory</a></li>
+                <li><a class="dropdown-item" href="#">File Status Report</a></li>
+                <li><a class="dropdown-item" href="#">Inventory/Kit Report</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Settings and rules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Update Credit Limit</a></li>
+                <li><a class="dropdown-item" href="#">Upload Credit Limit</a></li>
+                <li><a class="dropdown-item" href="#">Billing Cycle</a></li>
+                <li><a class="dropdown-item" href="#">Payment Due Date</a></li>
+                <li><a class="dropdown-item" href="#">Interest Setting</a></li>
+                <li><a class="dropdown-item" href="#">Minimum Payment</a></li>
+                <li><a class="dropdown-item" href="#">Fees Setting</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Commission</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reports
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Transaction Success Report</a></li>
+                <li><a class="dropdown-item" href="#">Transaction Log Report</a></li>
+                <li><a class="dropdown-item" href="#">Card Reprt</a></li>
+                <li><a class="dropdown-item" href="#">Overdue Statement</a></li>
+                <li><a class="dropdown-item" href="#">Daily Collection Report</a></li>
+                <li><a class="dropdown-item" href="#">Interest collected</a></li>
+                <li><a class="dropdown-item" href="#">Late Fees Earned</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Earned</a></li>
+                <li><a class="dropdown-item" href="#">Refund Report</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Recon Report</a></li>
+                
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+            </li>
+              
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header> <!----------------------HEADER END------------------------>
+
+<!----------------------MAIN BODY START------------------------>
+
+<h1 style="text-align:center;">Set Limit</h1>
+<div class="container">
+    <div class="row" id="row1">
+
+        <div id="prev-lim" class="col-sm-6">Previous Limit</div>
+        <div id="prev-lim-value" class="col-sm-6">Rs 40,000</div>
+    </div>
+
+    <div class="row">
+        <div id="set-lim" class="col-sm-6">Set Limit</div>
+        <input type="text" placeholder="enter new limit" id="set-lim-value" class="col-sm-6">
+    </div>
+
+    <div class="fr"><input type="radio" placeholder="send email">Inform customer via email</div>
+
+    
+    <h2 id="h2_sl">Additional Comments</h2>
+    <input type="text" placeholder="enter comment" id="sl_comment">
+    
+
+    <div class="sl_button" id="sl_btn_1">
+        <a href="#">
+        <button type="button">Cancel</button>
+        </a>
+     </div>
+     <div class="sl_button" id="sl_btn_2">
+        <a href="#">
+        <button type="button">OK</button>
+        </a>
+     </div>
+</div>
+
+
+<!----------------------MAIN BODY END------------------------>
+
+    <!----------------------FOOTER START------------------------>
+
+<footer>
+    <span class="foot">Copyright &copy; 2021 Company Name</span>
+    <span class="foot">Disclaimer</span>
+    <span class="foot">Privacy Policy</span>
+    <span class="foot">Code of Commitment</span>
+    <span class="foot">Responsible disclosure Policy</span>
+</footer><!----------------------FOOTER END------------------------>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+            
+            
+</body>
+</html>

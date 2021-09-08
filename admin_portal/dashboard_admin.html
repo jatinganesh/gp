@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard_Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\admin portal\admin_hf_styles.css">
+
+<style>
+/*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+
+/*-----------------------------------INFORMATION TILES START----------------------------------------*/
+.tile {  
+    margin-top: 5%;
+    margin-bottom: 4%; 
+}
+.tile .tileInfo {
+    font-size: 35px;
+    font-weight:600;
+    color: rgb(88, 88, 88);
+}
+
+#infoTiles .tileImg img {
+    display: block;
+    height:40px;
+    margin:auto;
+    height:40%;
+    margin-top:35%;
+    margin-bottom: 25%;
+}
+#infoTiles .tileStat.increase {
+    color:green;
+    font-weight: 600;
+}
+#infoTiles .tileStat.decrease {
+    color:rgb(194, 38, 38);
+    font-weight: 600;
+}
+
+
+.tileImg {
+   border-radius: 50px;
+}
+
+#tileImg1{background-color: lightcoral;}
+#tileImg2{background-color: lightskyblue;}
+#tileImg3{background-color: lightsteelblue;}
+#tileImg4{background-color: navajowhite;}
+#tileImg5{background-color: palegreen;}
+#tileImg6{background-color: tomato;}
+@media (min-width:1px) {
+    .col-xs-3 {
+        float:left;
+        width:25%;
+    }
+    .col-xs-9 {
+        float:left;
+        width:75%;
+    }
+}
+@media (max-width:767px) {
+    .tile2, .tile4, .tile5 {
+        visibility: collapse;
+        height:1px;
+        width:1px;
+        overflow:hidden;
+        margin:0;
+    }
+    
+}
+/*-----------------------------------INFORMATION TILES END----------------------------------------*/
+
+/*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
+ 
+
+</style>
+
+</head> 
+
+<body>
+
+    <!----------------------HEADER START------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="logo.png" width="150px" height="100px">   
+        
+
+    
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Database</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Card Inventory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Upload Inventory</a></li>
+                <li><a class="dropdown-item" href="#">File Status Report</a></li>
+                <li><a class="dropdown-item" href="#">Inventory/Kit Report</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Settings and rules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="update_credit_limit.html">Update Credit Limit</a></li>
+                <li><a class="dropdown-item" href="Upload_Credit_Limit.html">Upload Credit Limit</a></li>
+                <li><a class="dropdown-item" href="billing_cycle.html">Billing Cycle</a></li>
+                <li><a class="dropdown-item" href="Payment_due_date.html">Payment Due Date</a></li>
+                <li><a class="dropdown-item" href="Interest_setting.html">Interest Setting</a></li>
+                <li><a class="dropdown-item" href="minimum_payment.html">Minimum Payment</a></li>
+                <li><a class="dropdown-item" href="#">Fees Setting</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Commission</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reports
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Transaction Success Report</a></li>
+                <li><a class="dropdown-item" href="#">Transaction Log Report</a></li>
+                <li><a class="dropdown-item" href="#">Card Reprt</a></li>
+                <li><a class="dropdown-item" href="#">Overdue Statement</a></li>
+                <li><a class="dropdown-item" href="#">Daily Collection Report</a></li>
+                <li><a class="dropdown-item" href="#">Interest collected</a></li>
+                <li><a class="dropdown-item" href="#">Late Fees Earned</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Earned</a></li>
+                <li><a class="dropdown-item" href="#">Refund Report</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Recon Report</a></li>
+                
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+            </li>
+              
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header> <!----------------------HEADER END------------------------>
+
+<!----------------------MAIN BODY START------------------------>
+
+<br><br><br><br>
+<div id="mainBody" class="container">
+    <div id="infoTiles" class="row">
+        <div class="tile tile1 col-lg-4 col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tileImg col-xs-3" id="tileImg1">
+                        <img src="Dash_Customer_icon.png" height="40px" width="40px">
+                    </div>
+                    <div class="tileText col-xs-9">
+                        <div class="tileTitle">Number Of Customers</div>
+                        <div class="tileInfo">1.2 L</div>
+                        <div class="tileStat increase"><span>&blacktriangle;</span> 5.1% increase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile tile2 col-lg-4 col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tileImg col-xs-3" id="tileImg2">
+                        <img src="Dash_fund_icon.png" height="40px" width="40px">
+                    </div>
+                    <div class="tileText col-xs-9">
+                        <div class="tileTitle">Total Fund Available</div>
+                        <div class="tileInfo">2.1 Cr</div>
+                        <div class="tileStat decrease"><span>&dtrif;</span> 1.2% decrease</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile tile3 col-lg-4 col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tileImg col-xs-3" id="tileImg3">
+                        <img src="Dash_transaction_icon.png" height="40px" width="40px">
+                    </div>
+                    <div class="tileText col-xs-9">
+                        <div class="tileTitle">Number Of Transactions Today</div>
+                        <div class="tileInfo">1,987</div>
+                        <div class="tileStat increase"><span>&blacktriangle;</span> 1% increase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile tile4 col-lg-4 col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tileImg col-xs-3" id="tileImg4">
+                        <img src="Dash_collection_icon.png" height="40px" width="40px">
+                    </div>
+                    <div class="tileText col-xs-9">
+                        <div class="tileTitle">Total Collection</div>
+                        <div class="tileInfo">27.02 L</div>
+                        <div class="tileStat decrease"><span>&dtrif;</span> 4.8% decrease</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile tile5 col-lg-4 col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tileImg col-xs-3" id="tileImg5">
+                        <img src="Dash_Fund_Utilized.png" height="40px" width="40px">
+                    </div>
+                    <div class="tileText col-xs-9">
+                        <div class="tileTitle">Total Fund Utilized</div>
+                        <div class="tileInfo">50.78 L</div>
+                        <div class="tileStat increase"><span>&blacktriangle;</span> 0.1% increase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile tile6 col-lg-4 col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tileImg col-xs-3" id="tileImg6">
+                        <img src="Dash_card_icon.png" height="40px" width="40px">
+                    </div>
+                    <div class="tileText col-xs-9">
+                        <div class="tileTitle">Total Number Of Cards</div>
+                        <div class="tileInfo">10.9 T</div>
+                        <div class="tileStat increase"><span>&blacktriangle;</span> 0.01% increase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!----------------------INFO TILES END HERE------------------------>
+    <br><br><br><br>
+    <div class="row" id="graphs"><!----------------------GRAPHS START HERE------------------------>
+        <div id="graph graph1" class="col-md-6">
+            <img src="Dash_chart_1.PNG" height="100%" width="100%" class="img-responsive">
+        </div>
+        <div id="graph graph1" class="col-md-6">
+            <img src="Dash_chart_2.PNG" height="100%" width="100%" class="img-responsive">
+        </div>
+    </div><!----------------------GRAPHS END HERE------------------------>
+</div><!----------------------MAIN BODY CONTAINER ENDS HERE------------------------>
+   
+
+<!----------------------MAIN BODY END------------------------>
+
+    <!----------------------FOOTER START------------------------>
+<div class="updates">U<br>P<br>D<br>A<br>T<br>E<br>S</div>
+
+<footer>
+    <span class="foot">Copyright &copy; 2021 Company Name</span>
+    <span class="foot">Disclaimer</span>
+    <span class="foot">Privacy Policy</span>
+    <span class="foot">Code of Commitment</span>
+    <span class="foot">Responsible disclosure Policy</span>
+</footer><!----------------------FOOTER END------------------------>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+            
+            
+</body>
+</html>

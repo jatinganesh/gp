@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fixed Billing Cycle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\customer portal\bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Jatin\Desktop\my programs\admin portal\admin_hf_styles.css">
+
+<style>
+/*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+.row {
+    font-size:24px;
+    margin:20px;
+    text-align: center;
+}
+.vbc_button a {
+    text-decoration: none;
+}
+.row input{
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:200px;
+}
+#row1 {
+    margin-top: 150px;
+}
+#row2 {
+    margin-bottom:150px;
+}
+.vbc_button button {
+    display: block;
+    width:150px;
+    border-radius: 5px;
+    background-color:rgba(46, 46, 46, 0.548);
+    font-size: 20px;
+    margin:40px auto 50px;
+    box-shadow: 2px 2px 2px black;
+    height:45px;
+}
+@media (max-width:767px) {
+    .row {
+        font-size:18px;
+    }
+
+    .row input{
+        margin:20px auto 20px;
+    }
+    #row1 {
+        margin-top: 80px;
+    }
+    #row2 {
+        margin-bottom:40px;
+    }
+    .vbc_button button {
+    margin:40px auto 50px;
+}
+
+}
+
+/*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
+ 
+
+</style>
+
+</head> 
+
+<body>
+
+    <!----------------------HEADER START------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="logo.png" width="150px" height="100px">   
+        
+
+    
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Database</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Card Inventory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Upload Inventory</a></li>
+                <li><a class="dropdown-item" href="#">File Status Report</a></li>
+                <li><a class="dropdown-item" href="#">Inventory/Kit Report</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Settings and rules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Update Credit Limit</a></li>
+                <li><a class="dropdown-item" href="#">Upload Credit Limit</a></li>
+                <li><a class="dropdown-item" href="#">Billing Cycle</a></li>
+                <li><a class="dropdown-item" href="#">Payment Due Date</a></li>
+                <li><a class="dropdown-item" href="#">Interest Setting</a></li>
+                <li><a class="dropdown-item" href="#">Minimum Payment</a></li>
+                <li><a class="dropdown-item" href="#">Fees Setting</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Commission</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reports
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Transaction Success Report</a></li>
+                <li><a class="dropdown-item" href="#">Transaction Log Report</a></li>
+                <li><a class="dropdown-item" href="#">Card Reprt</a></li>
+                <li><a class="dropdown-item" href="#">Overdue Statement</a></li>
+                <li><a class="dropdown-item" href="#">Daily Collection Report</a></li>
+                <li><a class="dropdown-item" href="#">Interest collected</a></li>
+                <li><a class="dropdown-item" href="#">Late Fees Earned</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Earned</a></li>
+                <li><a class="dropdown-item" href="#">Refund Report</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Recon Report</a></li>
+                
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+            </li>
+              
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header> <!----------------------HEADER END------------------------>
+
+<!----------------------MAIN BODY START------------------------>
+<h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Fixed Billing Cycle</h1>
+<div class="container">
+    <div class="row" id="row1">
+        <div class="text-title col-md-6">Previous Date For Bill Generation</div>
+        <div class="col-md-6"> 24th March 2021</div>
+    </div>
+    <div class="row" id="row2">
+        <div class="text-title col-md-6">Next Date For Bill Generation Gap</div>
+        <input class="col-md-6" type="date">
+    </div>
+    <div class="vbc_button row">
+        <a href="#">
+        <button type="button">Submit</button>
+        </a>
+     </div>
+</div>
+   
+
+<!----------------------MAIN BODY END------------------------>
+
+    <!----------------------FOOTER START------------------------>
+<footer>
+    <span class="foot">Copyright &copy; 2021 Company Name</span>
+    <span class="foot">Disclaimer</span>
+    <span class="foot">Privacy Policy</span>
+    <span class="foot">Code of Commitment</span>
+    <span class="foot">Responsible disclosure Policy</span>
+</footer><!----------------------FOOTER END------------------------>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+            <script src="C:\Users\Jatin\Desktop\my programs\css framework\bootstrap-5.1.0-dist\bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+            
+            
+</body>
+</html>
