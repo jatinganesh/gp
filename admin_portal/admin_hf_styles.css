@@ -40,10 +40,22 @@ footer {
     z-index: 1;
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
     footer > .foot {
         display: block;
         border-bottom: 1px solid black;
         padding:5px;
+    }
+    .updates {
+        
+        position:fixed;
+        top:40%;
+        right:0%;
+        left:auto;
+        background-color: rgb(137, 43, 226);
+        width:30px;
+        text-align: center;
+        padding:5px; 
+        font-size: 24px;   
     }
 }
