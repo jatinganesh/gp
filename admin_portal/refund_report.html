@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Refund Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="admin_hf_styles.css">
+
+<style>
+/*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+
+.row{
+    clear: both;
+    margin-bottom: 30px;
+}
+/*-----------------------------------FILTER START------------------------------*/
+.row .c-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+.row input {
+    max-width:250px;
+}
+#df-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+/*-----------------------------------FILTER END------------------------------*/
+/*-----------------------------------IMAGE START------------------------------*/
+
+.da_img {
+    margin:40px auto 60px;
+    overflow: auto;
+}
+.da_img img {
+    min-width: 500px;
+}
+/*-----------------------------------IMAGE END------------------------------*/
+
+/*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
+ 
+
+</style>
+
+</head> 
+
+<body>
+
+    <!----------------------HEADER START------------------------>
+<header class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="logo.png" width="150px" height="100px">   
+        
+
+    
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Database</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Card Inventory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Upload Inventory</a></li>
+                <li><a class="dropdown-item" href="#">File Status Report</a></li>
+                <li><a class="dropdown-item" href="#">Inventory/Kit Report</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Settings and rules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="update_credit_limit.html">Update Credit Limit</a></li>
+                <li><a class="dropdown-item" href="Upload_Credit_Limit.html">Upload Credit Limit</a></li>
+                <li><a class="dropdown-item" href="billing_cycle.html">Billing Cycle</a></li>
+                <li><a class="dropdown-item" href="Payment_due_date.html">Payment Due Date</a></li>
+                <li><a class="dropdown-item" href="Interest_setting.html">Interest Setting</a></li>
+                <li><a class="dropdown-item" href="minimum_payment.html">Minimum Payment</a></li>
+                <li><a class="dropdown-item" href="#">Fees Setting</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Commission</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reports
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Transaction Success Report</a></li>
+                <li><a class="dropdown-item" href="#">Transaction Log Report</a></li>
+                <li><a class="dropdown-item" href="#">Card Reprt</a></li>
+                <li><a class="dropdown-item" href="#">Overdue Statement</a></li>
+                <li><a class="dropdown-item" href="#">Daily Collection Report</a></li>
+                <li><a class="dropdown-item" href="#">Interest collected</a></li>
+                <li><a class="dropdown-item" href="#">Late Fees Earned</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Fee Earned</a></li>
+                <li><a class="dropdown-item" href="#">Refund Report</a></li>
+                <li><a class="dropdown-item" href="#">Interchange Recon Report</a></li>
+                
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+            </li>
+              
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header> <!----------------------HEADER END------------------------>
+
+<!----------------------MAIN BODY START------------------------>
+
+<h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Refund Report</h1>
+
+<div class="container">
+    <div class="row" id="df-title">
+        Date Filter
+    </div>
+    <div class="row">
+        <div class="c-text col-sm-3">Enter the Start Date</div>
+        <input type="date" class="col-sm-4">
+    </div>
+    <div class="row">
+        <div class="c-text col-sm-3">Enter the End Date</div>
+        <input type="date" class="col-sm-4">
+    </div>
+    <div class="row da_img">
+        <img class="img-responsive" src="refund_report_img.PNG">
+    </div>
+</div>
+
+<!----------------------MAIN BODY CONTAINER ENDS HERE------------------------>
+   
+
+<!----------------------MAIN BODY END------------------------>
+
+    <!----------------------FOOTER START------------------------>
+
+<footer>
+    <span class="foot">Copyright &copy; 2021 Company Name</span>
+    <span class="foot">Disclaimer</span>
+    <span class="foot">Privacy Policy</span>
+    <span class="foot">Code of Commitment</span>
+    <span class="foot">Responsible disclosure Policy</span>
+</footer><!----------------------FOOTER END------------------------>
+            <script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+            <script src="bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+            
+            
+</body>
+</html>
