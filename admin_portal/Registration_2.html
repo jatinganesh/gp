@@ -34,7 +34,7 @@
 }
 .reg2_data .text-title {
     clear: left;
-    text-align: center;
+    text-align: left;
     font-size: 27px;
     font-weight: 600;
     color: black;
@@ -73,9 +73,13 @@
 
 @media (max-width:767px) {
     .reg2_data .text {
-        width: 100%;
         font-size: 25px;
-        text-align: center;
+        width: 200px;
+        text-align: left;
+        display: block;
+        margin-left: 10%;
+        min-height: 40px;
+        margin-right: auto;
     }
     .reg2_data .inputField, .reg2_data #b2 {
         width: 240px;
@@ -231,7 +235,7 @@
                 <input type="text" class="col-xxs-6 inputField">
 
                 <div class="text col-xxs-6">Pin code:</div>
-                <input type="text" class="col-xxs-6 inputField">
+                <input type="text"  class="col-xxs-6 inputField">
 
         </div>
 
@@ -241,10 +245,10 @@
 
                 
                 <div class="text col-xxs-6">Select ID proof type:</div>
-                <input type="password" class="col-xxs-6 inputField">
+                <input type="password"  class="col-xxs-6 inputField">
 
                 <div class="text col-xxs-6">Upload Document:</div>
-                <input type="file" class="col-xxs-6 inputField">
+                <input type="file"  class="col-xxs-6 inputField">
 
         </div>
 
