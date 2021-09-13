@@ -1,66 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Interest Setting</title>
+    <title>Customer Status</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="bootstrap-5.1.0-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="admin_hf_styles.css">
+
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
-.row {
-    font-size:24px;
-    margin:20px;
-    text-align: center;
+
+.row{
+    clear: both;
+    margin-bottom: 30px;
 }
-.vbc_button a {
-    text-decoration: none;
-}
-.row input{
-    font-size: 18px;
-    width:30%;
-    margin-left: auto;
-    margin-right: auto;
-    min-width:200px;
-}
-#row1 {
-    margin-top: 150px;
-}
-#row2 {
-    margin-bottom:150px;
-}
-.vbc_button button {
-    display: block;
-    width:150px;
-    border-radius: 5px;
-    background-color:rgba(46, 46, 46, 0.548);
+/*-----------------------------------FILTER START------------------------------*/
+.row .c-text {
     font-size: 20px;
-    margin: 120px auto 50px;
-    box-shadow: 2px 2px 2px black;
-    height:45px;
+    font-weight: 600;
 }
-@media (max-width:767px) {
-    .row {
-        font-size:18px;
-    }
+.row input {
+    max-width:250px;
+}
+#df-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+/*-----------------------------------FILTER END------------------------------*/
+/*-----------------------------------IMAGE START------------------------------*/
 
-    .row input{
-        margin:20px auto 20px;
-        width:80%;
-        font-size: 15px;
-    }
-    #row1 {
-        margin-top: 80px;
-    }
-    #row2 {
-        margin-bottom:40px;
-    }
-    .vbc_button button {
-    margin:40px auto 50px;
+.da_img {
+    margin:40px auto 60px;
+    overflow: auto;
 }
-
+.da_img img {
+    min-width: 500px;
 }
+/*-----------------------------------IMAGE END------------------------------*/
 
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
  
@@ -151,24 +128,48 @@
     </header> <!----------------------HEADER END------------------------>
 
 <!----------------------MAIN BODY START------------------------>
-<h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Interest Setting</h1>
+
+<h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Customer Status</h1>
+
 <div class="container">
-    <div class="row" id="row1">
-        <div class="text-title col-md-6">Please enter the Interest Rate in %</div>
-        <input class="col-md-6" type="text" placeholder="Previous Rate=  6%">
+    <div class="row" id="df-title">
+        Group Filter
     </div>
-    
-    <div class="vbc_button row">
-        <a href="#">
-        <button type="button">Submit</button>
-        </a>
-     </div>
+    <div class="row">
+        <div class="c-text col-sm-3">KYC Type</div>
+        <input type="search" class="col-sm-4">
+    </div>
+    <div class="row">
+        <div class="c-text col-sm-3">Card Assigned</div>
+        <input type="search" class="col-sm-4">
+    </div>
+    <div class="row">
+        <div class="c-text col-sm-3">Limit Set:</div>
+        <input type="search" class="col-sm-4">
+    </div>
+    <div class="row">
+        <div class="c-text col-sm-3">Status</div>
+        <input type="search" class="col-sm-4">
+    </div>
+    <div class="row" id="df-title">
+        Search By Customer
+    </div>
+    <div class="row">
+        <div class="c-text col-sm-3">Enter Ph. No</div>
+        <input type="tel" class="col-sm-4" placeholder="Ph. No.">
+    </div>
+    <div class="row da_img"><a href="customer_data.html">
+        <img class="img-responsive" src="Customer_status_pic.PNG"></a>
+    </div>
 </div>
+
+<!----------------------MAIN BODY CONTAINER ENDS HERE------------------------>
    
 
 <!----------------------MAIN BODY END------------------------>
 
     <!----------------------FOOTER START------------------------>
+
 <footer>
     <span class="foot">Copyright &copy; 2021 Company Name</span>
     <span class="foot">Disclaimer</span>
@@ -176,8 +177,8 @@
     <span class="foot">Code of Commitment</span>
     <span class="foot">Responsible disclosure Policy</span>
 </footer><!----------------------FOOTER END------------------------>
-<script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
-<script src="bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+            <script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
+            <script src="bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
             
             
 </body>

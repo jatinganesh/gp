@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Interest Setting</title>
+    <title>Assign Card</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="bootstrap-5.1.0-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="admin_hf_styles.css">
+
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+#row1{
+    margin-top: 80px;
+}
 .row {
-    font-size:24px;
-    margin:20px;
-    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
-.vbc_button a {
-    text-decoration: none;
+#prev-lim, #set-lim {
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 20px;
 }
-.row input{
-    font-size: 18px;
-    width:30%;
+#set-lim-value {
+    max-width: 400px;
+}
+.fr {
+    clear:both;
+    float:right;
+    margin-right: 10%;
+}
+#h2_sl {
+    clear: both;
+    margin:100px auto 50px;
+    font-weight: 600;
+}
+#sl_comment {
+    width:60%;
+    font-weight: 600;
+    min-height:100px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width:200px;
+    margin-bottom: 100px;
 }
-#row1 {
-    margin-top: 150px;
-}
-#row2 {
-    margin-bottom:150px;
-}
-.vbc_button button {
-    display: block;
+.sl_button button{
     width:150px;
+    padding:8px;
     border-radius: 5px;
-    background-color:rgba(46, 46, 46, 0.548);
-    font-size: 20px;
-    margin: 120px auto 50px;
-    box-shadow: 2px 2px 2px black;
-    height:45px;
+    
 }
+#sl_btn_1 button {
+    float: left;
+}
+#sl_btn_2 button {
+    float: right;
+    margin-bottom: 80px;
+}
+
 @media (max-width:767px) {
-    .row {
-        font-size:18px;
-    }
-
-    .row input{
-        margin:20px auto 20px;
+    #sl_comment {
         width:80%;
-        font-size: 15px;
-    }
-    #row1 {
-        margin-top: 80px;
-    }
-    #row2 {
-        margin-bottom:40px;
-    }
-    .vbc_button button {
-    margin:40px auto 50px;
+        min-height:100px;
 }
-
+#set-lim-value {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+}
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
  
 
@@ -151,24 +158,41 @@
     </header> <!----------------------HEADER END------------------------>
 
 <!----------------------MAIN BODY START------------------------>
-<h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Interest Setting</h1>
+
+<h1 style="text-align:center;">Assign Card</h1>
 <div class="container">
     <div class="row" id="row1">
-        <div class="text-title col-md-6">Please enter the Interest Rate in %</div>
-        <input class="col-md-6" type="text" placeholder="Previous Rate=  6%">
     </div>
+
+    <div class="row">
+        <div id="set-lim" class="col-sm-6">Choose card</div>
+        <input type="search" id="set-lim-value" class="col-sm-6">
+    </div>
+
+    <div class="fr"><input type="radio" placeholder="send email">Inform customer via email</div>
+
     
-    <div class="vbc_button row">
+    <h2 id="h2_sl">Additional Comments</h2>
+    <input type="text" placeholder="enter comment" id="sl_comment">
+    
+
+    <div class="sl_button" id="sl_btn_1">
         <a href="#">
-        <button type="button">Submit</button>
+        <button type="button">Cancel</button>
+        </a>
+     </div>
+     <div class="sl_button" id="sl_btn_2">
+        <a href="set_limit.html">
+        <button type="button">OK</button>
         </a>
      </div>
 </div>
-   
+
 
 <!----------------------MAIN BODY END------------------------>
 
     <!----------------------FOOTER START------------------------>
+
 <footer>
     <span class="foot">Copyright &copy; 2021 Company Name</span>
     <span class="foot">Disclaimer</span>
