@@ -15,6 +15,7 @@
 }
 #row1 {
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 .n_text {
     margin-bottom: 30px;
@@ -146,18 +147,19 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<h1 style="text-align:center;font-weight: 600;">Upload Credit Limit</h1><br><br><br>
+<h1 style="text-align:center;font-weight: 600;margin-top: 30px;">Upload Credit Limit</h1><br><br><br>
 <div class="container">
     <div class="row" id="row1">
         <div class="n_text col-md-6">Select File to Upload</div>
-        <div id="browse_btn" class="col-md-6"><button>Browse...</button></div>
+        <input type="file" class="col-md-5" style="font-size: 20px; margin-left: 30px;">
+        <!-- <div id="browse_btn" class="col-md-6"><button>Browse...</button></div> -->
     </div>
     <div class="row">
         <div class="n_text col-md-6">File Description</div>
         <div id="disc" class="col-md-6" ><input type="text" placeholder="enter the description"></div>
     </div>
     <div class="uc2_button" id="uc2_btn_1">
-        <a href="#">
+        <a href="dashboard_admin.html">
         <button type="button">Cancel</button>
         </a>
      </div>
