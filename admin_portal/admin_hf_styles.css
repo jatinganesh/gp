@@ -14,11 +14,21 @@ body {
 .updates {
     visibility: hidden;   
 }
+.box-bottom-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
 
 /* ------------------------------------------------NAVBAR------------------------------------------------ */
 .navbar {
     border:3px solid rgba(0, 0, 0, 0.459);
     z-index: 1;
+}
+.navbar-light .navbar-toggler-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e); */
+    background-image: url("ham-icon.png");
+    opacity:0.5
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -41,17 +51,19 @@ right:78px;
 z-index: 2;
 }
 #logo-img {
-    background-color:rgba(255, 255, 255, 0.788);  
-    border-radius: 0px 0px 40px 0px; 
-    box-shadow: 0px 0px 0px 14px rgba(255, 255, 255, 0.788);
+    background-color:rgb(12, 12, 51);  
+    border-radius: 50px 50px 50px 50px; 
+    border: 2px solid rgba(255, 255, 255, 0.226);
+    /* box-shadow: -80px -5px 30px 27px rgba(255, 255, 255, 0.199); */
+    border-right:3px solid rgba(255, 255, 255, 0.199);
 }
 #nav-bar {
-    background-color:rgb(10, 10, 41) !important; 
+    background-color:rgb(12, 12, 51) !important; 
     border-top: none;
 }
 #nav-cont {
-    background-color: #000033;;
-}
+    background-color: #02023d48;;
+}               
 @media (min-width:1350px) {
     .navbar-collapse {
         margin-left: 150px;
@@ -71,7 +83,7 @@ footer {
     background-color: #191947;
     color: rgba(255, 255, 255, 0.87);
     min-height:40px;
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 50px;
     font-size: 20px;
     clear:both;
@@ -121,6 +133,11 @@ footer {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+    #logo-img {
+        background-color:rgb(12, 12, 51);  
+        border-radius: 50px 50px 50px 50px; 
+        border:none;
     }
 }
 @media (max-width:992px){
