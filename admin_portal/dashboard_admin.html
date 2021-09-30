@@ -11,7 +11,35 @@
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
 
+/*-----------------------------------JUMBOTRON START----------------------------------------*/
+#jumb-mainT{
+    background-image: url("unsplashImg/jordan-wozniak-xP_AGmeEa6s-unsplash.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    min-height: 650px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.658);
+    background-size: 100%;
+    background-position: center 40%;
+    background-attachment: fixed;
+    padding-left: 5%;
+    padding-top:6%;
+}
+/*-----------------------------------JUMBOTRON END----------------------------------------*/
+
 /*-----------------------------------INFORMATION TILES START----------------------------------------*/
+body {
+    background-color: #ececed;
+}
+
+#mainBody {
+    background-color: white;
+    margin-top: -5px;
+    box-shadow: 0px 4px 8px 2px;
+    
+    /* background-color: #ececed; */
+}
+
 .tile {  
     margin-top: 5%;
     margin-bottom: 4%; 
@@ -41,6 +69,7 @@
 
 .tileImg {
    border-radius: 50px;
+   height:100%
 }
 
 
@@ -50,6 +79,20 @@
 #tileImg4{background-color: navajowhite;}
 #tileImg5{background-color: palegreen;}
 #tileImg6{background-color: tomato;}
+
+
+.graph {
+    padding-right:20px;
+    padding-bottom: 30px;
+    /* padding:0px 50px 30px 50px; */
+    
+}
+.graph > img {
+    border:1px solid black;
+    box-shadow: none;
+    /* box-shadow: 1px 1px 3px 1px inset; */
+}
+
 @media (min-width:1px) {
     .col-xs-3 {
         float:left;
@@ -68,7 +111,19 @@
         overflow:hidden;
         margin:0;
     }
+    #jumb-mainT{
+        background-size: 200%;
+    }   
+    .graph > img {
+        box-shadow: 0px 0px 8px 1px;
+    }
     
+}
+@media(min-width:1200px)
+{
+    #jumb-mainT{
+    background-position: center 60%;
+}   
 }
 
 /*-----------------------------------INFORMATION TILES END----------------------------------------*/
@@ -164,13 +219,22 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<br><br><br><br>
+<!----------------------Jumbotron Start------------------------>
+<h2 id="jumb-mainT">Company Value or Quote</h2>
+<!-- <h6 id="jumb-subT">Appropriate subtext</h6> -->
+<!----------------------Jumbotron Start------------------------>
+
+
+
+
+<!-- <br><br><br><br> -->
 <div id="mainBody" class="container">
+    <br><br>
     <div id="infoTiles" class="row">
         <div class="tile tile1 col-lg-4 col-md-6">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="tileImg col-xs-3" id="tileImg1">
+                    <div class="tileImg col-xs-3" id="tileImg1" >
                         <img src="Dash_Customer_icon.png" height="40px" width="40px">
                     </div>
                     <div class="tileText col-xs-9">
@@ -255,10 +319,10 @@
     </div><!----------------------INFO TILES END HERE------------------------>
     <br><br><br><br>
     <div class="row" id="graphs"><!----------------------GRAPHS START HERE------------------------>
-        <div id="graph graph1" class="col-md-6">
+        <div id="graph1" class="col-md-6 graph ">
             <img src="Dash_chart_1.PNG" height="100%" width="100%" class="img-responsive">
         </div>
-        <div id="graph graph1" class="col-md-6">
+        <div id="graph2" class="col-md-6 graph ">
             <img src="Dash_chart_2.PNG" height="100%" width="100%" class="img-responsive">
         </div>
     </div><!----------------------GRAPHS END HERE------------------------>
