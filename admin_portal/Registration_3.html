@@ -10,16 +10,54 @@
 
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+body {
+    background-color: #ececed;
+}
+
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* background-color: #ececed; */
+}
+
+#nav-highL{
+    border-top:1px solid rgba(255, 255, 255, 0.377);
+    border-right:3px solid rgba(255, 255, 255, 0.377);
+    border-bottom:1px solid rgba(255, 255, 255, 0.377);
+    border-left:3px solid rgba(255, 255, 255, 0.377);
+    border-radius: 15px;
+    box-shadow: 1px 0px 5px 1px inset;
+}
+#r3_title{
+    text-align: center;
+    font-weight: 600;
+}
+#r3_subT {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+#pad-maker{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn a {
+    text-decoration: none;
+}
 
 #preview {
-    background-color: grey;
+    /* background-color: grey; */
+    background-color:rgba(47, 47, 73, 0.849);
     height:500px;
     position: relative;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width:90%;
+    margin:70px auto 70px;
+    border-radius: 15px;
+    
     max-width: 700px;
     z-index: 0;
     border: 2px solid rgba(61, 61, 61, 0.432);
@@ -27,8 +65,8 @@
 #prew-title, #prew-print, #prew-share {
     position: absolute;
     border: 2px solid rgb(24, 24, 24);
-    padding:10px;
-    background-color: rgb(173, 173, 173);
+    padding:7px;
+    background-color: rgba(255, 255, 255, 0.822);
     min-width: 70px;
     border-radius:5px;
     text-align: center;
@@ -37,22 +75,36 @@
     font-weight: 600;
 
 }
-#prew-title{
-    top: 20px;
-    text-align: center;
-    border: none;
-    box-shadow: 1px 1px 5px 3px; 
+#prew-print a, #prew-share a{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
 }
-#prew-print{bottom: 5px; left: 5px;}
-#prew-share{bottom: 5px; right: 5px;}
+#prew-title{
+    position: static;
+    text-align: center;
+    padding:2px;
+    font-weight: 600;
+    
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.822);
+    border: none;
+}
+#prew-print{
+    bottom: -2px; left: -2px;
+    border-radius: 0px 5px 0px 15px;
+}
+#prew-share{
+    bottom: -2px; right: -2px;
+    border-radius: 5px 0px 15px 0px;
+}
 #mini-preview {
-    width:95%;
-    height:350px;
+    width:99%;
+    height:420px;
     background-color: whitesmoke;
-    margin: 80px auto 0px;
+    margin: 0px auto 0px;
     box-shadow: 3px 3px 3px inset;
     border-radius: 5px;
-    overflow: scroll;
+    overflow: auto;
 }
 #mini-preview .p-text{
     font-size:20px;
@@ -80,22 +132,44 @@
 }
 #reg3_button-section .btn{
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 60px;
-    margin-bottom: 50px;
+                /* display: block;
+                width:150px;
+                color:white;
+                font-weight: 600;
+                border-radius: 9px;
+                background-color:rgba(76, 77, 161, 0.918);
+                font-size: 18px;
+                height:45px;
+                border:none; */
+    margin:60px auto 50px;
 }
 #reg3_button-section .btn button {
-    width:240px;
-    height:60px;
-    box-shadow: 1px 1px 3px black;
-    font-size: 20px;
+    min-width:150px;
+    padding:10px;
+    min-height:60px;
+    display: block;
+                width:150px;
+                color:white;
+                font-weight: 600;
+                border-radius: 9px;
+                background-color:rgba(76, 77, 161, 0.918);
+                font-size: 18px;
+                height:45px;
+                border:none;
+                margin-left: auto;
+                margin-right: auto;
+                
 }
 @media (max-width:767px){
 
     #reg3_button-section {
     margin-top: -55px;
 }
+}
+@media(min-width:1200px){
+    #mainBody{
+        width:75%
+    }
 }
 
 
@@ -124,7 +198,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+                    <a class="nav-link" id="nav-highL" href="Registration_1.html">Customer Registration</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Customer_status.html">Customer Status</a>
@@ -188,10 +262,12 @@
     </header> <!----------------------HEADER END------------------------>
 
 <!----------------------MAIN BODY START------------------------>
-<div class="container">
-    <div class="row">
+<div id="mainBody" class="container">
+    <div class="row" id="pad-maker">
+        <h1 id="r3_title">Registration Preview</h1>
+        <h2 id="r3_subT">Step 3 of 3</h2>
         <div class="col-md-7" id="preview">
-            <div id="prew-title">Registration Preview</div>
+            <div id="prew-title">PREVIEW</div>
             <div id="mini-preview">
                 <div class="p-top">Customer Information</div>
                 <div class="p-title">Basic Information</div>
@@ -214,13 +290,13 @@
                 <br>
                 <img src="Aadhar_back.PNG" width="60%" class="prew-img img-responsive">
             </div>
-            <div id="prew-print">Print</div>
-            <div id="prew-share">Share</div>
+            <div id="prew-print"><a href="#">Print</a></div>
+            <div id="prew-share"><a href="#">Share</a></div>
         </div>
         <div class="col-md-5">
             <div id="reg3_button-section">
-                <div class="btn"><a href="Registration_2.html"><button id="r3_b1">Edit Registration</button></a></div>
-                <div class="btn"><a href="dashboard_admin.html"><button id="r3_b2">Confirm Registration</button></a></div>
+                <div class="btn"><a href="Registration_2.html"><button id="r3_b1">Edit </button></a></div>
+                <div class="btn"><a href="Registration_1.html"><button id="r3_b2">Confirm </button></a></div>
             </div>
         </div>
     </div>

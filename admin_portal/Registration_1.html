@@ -11,6 +11,29 @@
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
 
+body {
+    background-color: #ececed;
+}
+
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* background-color: #ececed; */
+}
+
+#nav-highL{
+    border-top:1px solid rgba(255, 255, 255, 0.377);
+    border-right:3px solid rgba(255, 255, 255, 0.377);
+    border-bottom:1px solid rgba(255, 255, 255, 0.377);
+    border-left:3px solid rgba(255, 255, 255, 0.377);
+    border-radius: 15px;
+    box-shadow: 1px 0px 5px 1px inset;
+}
 .reg1_data .col-xxs-6 {
     float: left;
     width:50%;
@@ -28,37 +51,56 @@
     margin-bottom: 120px;
     font-weight: 600;
 }
-.reg1_data #b2 {
-    margin-top: 45px;
-    width: 120px;
-    height:35px;
-}
 .reg1_data .text {
     clear: left;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    color:#212529d3;
     margin:10px 0px 10px;
 }
 .reg1_data .inputField {
     width: 300px;
     max-height: 50px;
     margin:10px 0px 10px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(207, 207, 207);
 }
 .reg1_button button {
     display: block;
     width:150px;
-    border-radius: 5px;
-    background-color:rgba(46, 46, 46, 0.548);
-    font-size: 20px;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color:rgba(76, 77, 161, 0.918);
+    font-size: 18px;
     margin:120px auto 50px;
-    box-shadow: 2px 2px 2px black;
+    /* box-shadow: 2px 2px 2px black; */
     height:45px;
+    border:none;
 }
 .reg1_button a{
     text-decoration: none;
 }
+.reg1_data #b2 {
+    margin:120px auto 50px 50%;
+    margin-top: 45px;
+    width: 100px;
+    height:35px;
+    font-size: 13px;
+    color: rgb(61, 61, 61);
+    background-color:rgba(170, 172, 255, 0.589);
+}
 
-
+@media(min-width:1200px){
+    .reg1_data .text {
+    text-align: right;
+    padding-right: 50px;
+}
+    #mainBody{
+        width:70%
+    }
+}
 @media (max-width:767px) {
     .reg1_data .text {
         width: 100%;
@@ -69,6 +111,9 @@
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+}
+.reg1_data #b2 {
+    margin:45px auto 50px auto;
 }
 
 }
@@ -97,7 +142,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+                    <a class="nav-link" id="nav-highL" href="Registration_1.html">Customer Registration</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Customer_status.html">Customer Status</a>
@@ -162,7 +207,7 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<div class="container">
+<div id ="mainBody" class="container">
     <div class="row reg1_data">
         <h1>Registration</h1>
         <h2>Step 1 of 3</h2>

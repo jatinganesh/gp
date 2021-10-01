@@ -9,13 +9,37 @@
     <link rel="stylesheet" href="admin_hf_styles.css">
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+
+body {
+    background-color: #ececed;
+}
+
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* background-color: #ececed; */
+}
+
+#nav-highL{
+    border-top:1px solid rgba(255, 255, 255, 0.377);
+    border-right:3px solid rgba(255, 255, 255, 0.377);
+    border-bottom:1px solid rgba(255, 255, 255, 0.377);
+    border-left:3px solid rgba(255, 255, 255, 0.377);
+    border-radius: 15px;
+    box-shadow: 1px 0px 5px 1px inset;
+}
 .reg2_data {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .reg2_data .col-xxs-6 {
     float: left;
-    width:39%;
+    width:50%;
 }
 .reg2_data h1{
     text-align: center;
@@ -29,23 +53,27 @@
 .reg2_data .text {
     clear: left;
     text-align: right;
-    font-size: 27px;
+    font-size: 20px;
+    color:#212529d3;
     margin:10px 0px 10px;
 }
 .reg2_data .text-title {
     clear: left;
-    text-align: left;
+    text-align: center;
     font-size: 27px;
     font-weight: 600;
     color: black;
     margin:10px 0px 10px;
 }
 .reg2_data .inputField {
-    width: 300px;
+    /* width: 250px; */
     max-height: 50px;
-    min-height: 40px;
-    margin:10px 0px 10px 30px;
-    
+    min-height: 35px;
+    max-width:220px;
+    margin:10px 0px 10px 0px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgba(207, 207, 207, 0.781);
 }
 .reg2_data #b2 {
     width: 140px;
@@ -57,14 +85,25 @@
    
 }
 .reg2_button button#b1{
-    display: block;
+    /* display: block;
     width:150px;
     border-radius: 5px;
     background-color:rgba(46, 46, 46, 0.548);
     font-size: 20px;
     margin:120px auto 50px;
     box-shadow: 2px 2px 2px black;
+    height:45px; */
+    display: block;
+    width:150px;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color:rgba(76, 77, 161, 0.918);
+    font-size: 18px;
+    margin:120px auto 50px;
+    /* box-shadow: 2px 2px 2px black; */
     height:45px;
+    border:none;
 }
 .reg2_button a{
     text-decoration: none;
@@ -73,7 +112,7 @@
 
 @media (max-width:767px) {
     .reg2_data .text {
-        font-size: 25px;
+        font-size: 20px;
         width: 200px;
         text-align: left;
         display: block;
@@ -89,8 +128,25 @@
         min-height: 40px;
         margin-right: auto;
     }
-    .reg2_data .text-title{
+    /* .reg2_data .text-title{
         width:80%;
+    } */
+}
+@media(max-width:514px){
+    .reg2_data .inputField{
+        width:70%;
+        margin-left:20%;
+        margin-top:0px;
+    }
+    .reg2_data .text{
+        margin-left:20%;
+        margin-bottom: 0px;
+        min-height: 20px;
+    }
+}
+@media(min-width:1200px){
+    #mainBody{
+        width:75%
     }
 }
 
@@ -120,7 +176,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="Registration_1.html">Customer Registration</a>
+                    <a class="nav-link" id="nav-highL" href="Registration_1.html">Customer Registration</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Customer_status.html">Customer Status</a>
@@ -185,71 +241,90 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<div class="container">
+<div id ="mainBody" class="container">
     <div class="row reg2_data">
 
         <h1>Registration</h1>
         <h2>Step 2 of 3</h2>
 
-        <div id="basic-fields" class="col-xxl-6">
-        
-                <div class="text-title col-xxs-6">Basic Information</div>
-                
-                <div class="text col-xxs-6">First Name:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Last Name:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Gender:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Date Of Birth:</div>
-                <input type="date" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Mobile No:</div>
-                <input type="tel" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Email ID:</div>
-                <input type="email" class="col-xxs-6 inputField">
-
+        <div id="basic-fields" class="col-xl-6">
+            <div class="container">
+                <div class="row">
+                    <div class="text-title col-sm-11">Basic Information</div>
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">First Name:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Last Name:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Gender:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Date Of Birth:</div>
+                    <input type="date" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Mobile No:</div>
+                    <input type="tel" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Email ID:</div>
+                    <input type="email" class="col-sm-6 inputField">
+                </div>
+            </div>
         </div>
 
-        <div id="address-fields" class="col-xxl-6">
-
-                <div class="text-title col-xxs-6">Address</div>
-
-                <div class="text col-xxs-6">Contact Address:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Permanent Address:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Country:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">State:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">City:</div>
-                <input type="text" class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Pin code:</div>
-                <input type="text"  class="col-xxs-6 inputField">
-
+        <div id="address-fields" class="col-xl-6">
+            <div class="container">
+                <div class="row">
+                    <div class="text-title col-sm-11">Address</div>
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Contact Address:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Permanent Address:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Country:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">State:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">City:</div>
+                    <input type="text" class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Pin code:</div>
+                    <input type="text"  class="col-sm-6 inputField">
+                </div>
+            </div>
         </div>
 
-        <div id="doc-fields" class="col-xxl-6">
-
-                <div class="text-title col-xxs-6">Upload document</div>
-
-                
-                <div class="text col-xxs-6">Select ID proof type:</div>
-                <input type="password"  class="col-xxs-6 inputField">
-
-                <div class="text col-xxs-6">Upload Document:</div>
-                <input type="file"  class="col-xxs-6 inputField">
-
+        <div id="doc-fields" class="col-xl-6">
+            <div class="container">
+                <div class="row">
+                    <div class="text-title col-sm-11">Upload document</div>
+                </div>
+                <div class="row"> 
+                    <div class="text col-sm-6">Select ID proof type:</div>
+                    <input type="password"  class="col-sm-6 inputField">
+                </div>
+                <div class="row">
+                    <div class="text col-sm-6">Upload Document:</div>
+                    <input type="file"  class="col-sm-6 inputField" style="background-color: white; font-size: 14px;">
+                </div>
+            </div>
         </div>
 
 
