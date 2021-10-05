@@ -10,16 +10,33 @@
 
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+body {
+    background-color: #ececed;
+}
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* background-color: #ececed; */
+}
+a{
+    text-decoration: none;
+}
+
 .row {
-    font-size: 25px;
+    font-size: 20px;
 }
 #row1 {
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-top: 90px;
 }
 .n_text {
     margin-bottom: 30px;
     text-align: center;
+    color:#212529c0;
 }
 #browse_btn button{
     width:250px;
@@ -30,18 +47,34 @@
     min-height: 100px;
     margin-bottom: 100px;
     max-width: 400px;
+    color: rgb(59, 56, 56);
+    border-radius: 15px;
+    background-color:#562eb31c;
+    border:none;
 }
-.uc2_button button{
-    width:100px;
-    border-radius: 8px;
-    padding:6px;
+#disc{
+    border-radius: 15px;
+    border:none;
+    color:#212529;
 }
-#uc2_btn_1 button {
+.uc2_button{
     float:left;
+    width:100%;
+    text-align: center;
 }
-#uc2_btn_2 button {
-    float:right;
-    margin-bottom: 50px;
+.uc2_button button {
+    display: block;
+    width:150px;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color:rgba(76, 77, 161, 0.918);
+    font-size: 18px;
+    margin: 10px auto 20px;
+    /* box-shadow: 2px 2px 2px black; */
+    height:45px;
+    border:none;
+
 }
 @media (max-width:767px) {
     .n_text, #browse_btn, #disc {
@@ -52,10 +85,41 @@
     }
     #disc input{
     width:80%;
+    max-width:220px;
 }
+#browse-input{
+        float:none;
+        position: static;
+        display: block;
+        margin-left: 20%;
+        margin-right: auto;
+      width:70%;
+      font-size: 12px;
+        text-align: center;
+    }
+    .n_text{
+        margin-bottom: 0px;
+        margin-top: 25px;
+    }
+    #b_but{
+        text-align: center;
+    }
 #row1 {
     margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+}
+@media(min-width:1200px){
+    #mainBody{
+        width:70%
+    }
+    .n_text{
+        text-align: right;
+        padding-right:30px;
+    }
 }
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
  
@@ -103,7 +167,7 @@
                 </li>
     
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="nav-highL" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Settings and rules
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -147,28 +211,32 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<h1 style="text-align:center;font-weight: 600;margin-top: 30px;">Upload Credit Limit</h1><br><br><br>
-<div class="container">
+
+<div class="container"id="mainBody">
+    <h1 style="text-align:center;font-weight: 600;margin-top: 30px;">Upload Credit Limit</h1>
     <div class="row" id="row1">
         <div class="n_text col-md-6">Select File to Upload</div>
-        <input type="file" class="col-md-5" style="font-size: 20px; margin-left: 30px;">
+        <input  id="browse-input" type="file" class="col-md-6">
         <!-- <div id="browse_btn" class="col-md-6"><button>Browse...</button></div> -->
     </div>
     <div class="row">
         <div class="n_text col-md-6">File Description</div>
-        <div id="disc" class="col-md-6" ><input type="text" placeholder="enter the description"></div>
+        <div id="disc" class="col-md-6" ><input type="text"></div>
+        <div class="row">
+            <!-- <div class="uc2_button" id="uc2_btn_1">
+                <a href="dashboard_admin.html">
+                <button type="button">Cancel</button>
+                </a>
+            </div> -->
+        </div>
+        <div class="uc2_button" id="uc2_btn_2">
+            <a href="dashboard_admin.html">
+            <button type="button">Upload</button>
+            </a>
+        </div>
     </div>
-    <div class="uc2_button" id="uc2_btn_1">
-        <a href="dashboard_admin.html">
-        <button type="button">Cancel</button>
-        </a>
-     </div>
-     <div class="uc2_button" id="uc2_btn_2">
-        <a href="#">
-        <button type="button">OK</button>
-        </a>
-     </div>
 </div>
+    
 
 
 <!----------------------MAIN BODY END------------------------>

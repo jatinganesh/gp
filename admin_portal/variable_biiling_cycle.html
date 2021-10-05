@@ -10,10 +10,26 @@
 
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+body {
+    background-color: #ececed;
+}
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+    /* background-color: #ececed; */
+}
 .row {
-    font-size:24px;
-    margin:20px;
+    font-size:20px;
+    margin:10px;
     text-align: center;
+}
+footer .row {
+    text-align: left;
 }
 .vbc_button a {
     text-decoration: none;
@@ -23,9 +39,14 @@
     margin-left: auto;
     margin-right: auto;
     min-width:200px;
+    border-radius: 10px;
+    border:none;
+    background-color: #6c64801c;
+    min-height: 35px;
 }
 #row1 {
     margin-top: 150px;
+    margin-bottom: 20px;
 }
 #row2 {
     margin-bottom:150px;
@@ -33,12 +54,15 @@
 .vbc_button button {
     display: block;
     width:150px;
-    border-radius: 5px;
-    background-color:rgba(46, 46, 46, 0.548);
-    font-size: 20px;
-    margin:40px auto 50px;
-    box-shadow: 2px 2px 2px black;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color:rgba(76, 77, 161, 0.918);
+    font-size: 18px;
+    margin: 1px auto 2px;
+    /* box-shadow: 2px 2px 2px black; */
     height:45px;
+    border:none;
 }
 @media (max-width:767px) {
     .row {
@@ -58,6 +82,11 @@
     margin:40px auto 50px;
 }
 
+}
+@media(min-width:1200px){
+    #mainBody{
+        width:70%
+    }
 }
 
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
@@ -106,7 +135,7 @@
                 </li>
     
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="nav-highL" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Settings and rules
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -149,8 +178,9 @@
     </header> <!----------------------HEADER END------------------------>
 
 <!----------------------MAIN BODY START------------------------>
-<h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Variable Billing Cycle</h1>
-<div class="container">
+
+<div class="container" id="mainBody">
+    <h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Variable Billing Cycle</h1>
     <div class="row" id="row1">
         <div class="text-title col-md-6">Select Date For First Bill Generation</div>
         <input class=" col-md-6" type="date" >

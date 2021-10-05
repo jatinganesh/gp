@@ -10,9 +10,26 @@
 
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
+body {
+    background-color: #ececed;
+}
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* background-color: #ececed; */
+}
+a{
+    text-decoration: none;
+}
+
 .row {
     font-size:24px;
-    margin:20px;
+    /* margin:20px; */
     text-align: center;
 }
 .vbc_button a {
@@ -26,20 +43,23 @@
     min-width:200px;
 }
 #row1 {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 #row2 {
-    margin-bottom:150px;
+    margin-bottom:1px;
 }
 .vbc_button button {
     display: block;
     width:150px;
-    border-radius: 5px;
-    background-color:rgba(46, 46, 46, 0.548);
-    font-size: 20px;
-    margin: 120px auto 50px;
-    box-shadow: 2px 2px 2px black;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color:rgba(76, 77, 161, 0.918);
+    font-size: 18px;
+    margin: 100px auto 20px;
+    /* box-shadow: 2px 2px 2px black; */
     height:45px;
+    border:none;
 }
 @media (max-width:767px) {
     .row {
@@ -61,6 +81,15 @@
     margin:40px auto 50px;
 }
 
+}
+@media(min-width:1200px){
+    #mainBody{
+        width:70%
+    }
+    .n_text{
+        text-align: right;
+        padding-right:30px;
+    }
 }
 
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
@@ -109,7 +138,7 @@
                 </li>
     
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="nav-highL" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Settings and rules
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -124,7 +153,7 @@
                 </ul>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Reports
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -152,11 +181,12 @@
     </header> <!----------------------HEADER END------------------------>
 
 <!----------------------MAIN BODY START------------------------>
-<h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Minimum Payment</h1>
-<div class="container">
+
+<div id="mainBody" class="container">
+    <h1 style="text-align: center;font-weight: 600;margin-top: 40px;">Minimum Payment</h1>
     <div class="row" id="row1">
-        <div class="text-title col-md-6">Please enter the Minimum Payment in %</div>
-        <input class="col-md-6" type="text" placeholder="Previous Min Payment= 10 %">
+        <div class="text-title col-md-6">Enter the Minimum Payment</div>
+        <input class="col-md-6" type="text" placeholder="Previous Min Payment= 10 %" style="border-radius: 10px;">
     </div>
     
     <div class="vbc_button row">
