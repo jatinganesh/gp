@@ -15,10 +15,10 @@ body {
 }
 #mainBody {
     background-color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
     box-shadow: 0px 0px 10px 2px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
     padding-left: 50px;
@@ -31,6 +31,13 @@ body {
 }
 a{
     text-decoration: none;
+}
+.filter_but {
+    /* text-align: center; */
+    display: block;
+    
+    margin-left: 15px;
+    margin-right: auto;
 }
 .card {
     background-color: #ececed;
@@ -52,7 +59,7 @@ footer .row {
 .row input {
     max-width:250px;
     border-radius: 10px;
-    background-color: rgba(79, 70, 88, 0.151);
+    background-color: rgba(59, 56, 61, 0.089);
     border:none;
 }
 #df-title {
@@ -99,7 +106,7 @@ footer .row {
                     <a class="nav-link" href="Registration_1.html">Customer Registration</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Customer_status.html">Customer Status</a>
+                    <a class="nav-link" id="nav-highL" href="Customer_status.html">Customer Status</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Customer_database.html">Customer Database</a>
@@ -161,16 +168,18 @@ footer .row {
 
 <!----------------------MAIN BODY START------------------------>
 
-<h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Customer Status</h1>
+<h1 style="font-weight:600; margin:50px auto 20px;text-align: center; margin-bottom: 60px;">Customer Status</h1>
 
   
 
 <div class="container" >
-    <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          Button with data-bs-target
-        </button>
-      </p>
+    <div class="row">
+        <p class="filter_but">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Filter
+            </button>
+        </p>
+    </div>
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
             <div id="mainBody">

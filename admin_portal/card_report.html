@@ -9,20 +9,58 @@
     <link rel="stylesheet" href="admin_hf_styles.css">
 
 <style>
-/*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
-
+body {
+    background-color: #ececed;
+    /* background-color: white; */
+}
+#mainBody {
+    background-color: white;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+    width:50%;
+    border-radius: 30px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+    /* background-color: #ececed; */
+}
+a{
+    text-decoration: none;
+}
+.filter_but {
+    /* text-align: center; */
+    display: block;
+    
+    margin-left: 15px;
+    margin-right: auto;
+}
+.card {
+    background-color: #ececed;
+    border:none;
+}
 .row{
     clear: both;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+footer .row {
+    margin-bottom: 2px;
 }
 /*-----------------------------------FILTER START------------------------------*/
 .row .c-text {
     font-size: 20px;
     font-weight: 600;
+    opacity:0.6;
 }
 .row input {
     max-width:250px;
-    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgba(59, 56, 61, 0.089);
+    border:none;
 }
 #df-title {
     font-size: 24px;
@@ -42,7 +80,6 @@
 
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
  
-
 </style>
 
 </head> 
@@ -101,9 +138,9 @@
                 </ul>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Reports
-                </a>
+                    <a class="nav-link dropdown-toggle" id="nav-highL" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Reports
+                    </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="transaction_succ_report.html">Transaction Success Report</a></li>
                     <li><a class="dropdown-item" href="Transaction_log_report.html">Transaction Log Report</a></li>
@@ -130,27 +167,40 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Card Report</h1>
+<h1 style="font-weight:600; margin:50px auto 20px;text-align: center; margin-bottom: 60px;">Card Report</h1>
 
 <div class="container">
     <div class="row">
-        <div class="c-text col-sm-3">Card Number:</div>
-        <input type="search" class="col-sm-4">
+        <p class="filter_but">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Filter
+            </button>
+        </p>
     </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Card Status:</div>
-        <input type="search" class="col-sm-4">
-    </div>
-    <div class="row" id="df-title">
-        Date Filter
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Enter the Start Date</div>
-        <input type="date" class="col-sm-4">
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Enter the End Date</div>
-        <input type="date" class="col-sm-4">
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <div id="mainBody">                 
+                <div class="row">
+                    <div class="c-text col-sm-6">Card Number:</div>
+                    <input type="search" class="col-sm-6">
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Card Status:</div>
+                    <input type="search" class="col-sm-6">
+                </div>
+                <div class="row" id="df-title">
+                    Date Filter
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Enter the Start Date</div>
+                    <input type="date" class="col-sm-6">
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Enter the End Date</div>
+                    <input type="date" class="col-sm-6">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row da_img">
         <img class="img-responsive" src="Card_report_img.PNG">
