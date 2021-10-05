@@ -10,18 +10,50 @@
 
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
-
+body {
+    background-color: #ececed;
+}
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+    width:50%;
+    border-radius: 30px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+    /* background-color: #ececed; */
+}
+a{
+    text-decoration: none;
+}
+.card {
+    background-color: #ececed;
+    border:none;
+}
 .row{
     clear: both;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+footer .row {
+    margin-bottom: 2px;
 }
 /*-----------------------------------FILTER START------------------------------*/
 .row .c-text {
     font-size: 20px;
     font-weight: 600;
+    opacity:0.6;
 }
 .row input {
     max-width:250px;
+    border-radius: 10px;
+    background-color: rgba(79, 70, 88, 0.151);
+    border:none;
 }
 #df-title {
     font-size: 24px;
@@ -131,32 +163,45 @@
 
 <h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Customer Status</h1>
 
-<div class="container" style="margin-left: 20px;">
-    <div class="row" id="df-title">
-        Group Filter
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">KYC Type</div>
-        <input type="search" class="col-sm-4">
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Card Assigned</div>
-        <input type="search" class="col-sm-4">
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Limit Set:</div>
-        <input type="search" class="col-sm-4">
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Status</div>
-        <input type="search" class="col-sm-4">
-    </div>
-    <div class="row" id="df-title">
-        Search By Customer
-    </div>
-    <div class="row">
-        <div class="c-text col-sm-3">Enter Ph. No</div>
-        <input type="tel" class="col-sm-4" placeholder="Ph. No.">
+  
+
+<div class="container" >
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <div id="mainBody">
+                <div class="row" id="df-title">
+                    Group Filter
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">KYC Type</div>
+                    <input type="search" class="col-sm-6">
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Card Assigned</div>
+                    <input type="search" class="col-sm-6">
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Limit Set:</div>
+                    <input type="search" class="col-sm-6">
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Status</div>
+                    <input type="search" class="col-sm-6">
+                </div>
+                <div class="row" id="df-title">
+                    Search By Customer
+                </div>
+                <div class="row">
+                    <div class="c-text col-sm-6">Enter Ph. No</div>
+                    <input type="tel" class="col-sm-6" placeholder="Ph. No.">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row da_img"><a href="customer_data.html">
         <img class="img-responsive" src="Customer_status_pic.PNG"></a>

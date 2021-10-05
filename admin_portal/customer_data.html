@@ -10,15 +10,36 @@
 
 <style>
 /*-----------------------------------MAIN CONTENT STARTS----------------------------------------*/
-
+body {
+    background-color: #ececed;
+}
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    
+    /* background-color: #ececed; */
+}
+a{
+    text-decoration: none;
+}
 .row{
     clear: both;
     margin-bottom: 30px;
+}
+footer .row{
+    margin: 3px;
 }
 /*-----------------------------------FILTER START------------------------------*/
 .row .c-text {
     font-size: 20px;
     font-weight: 600;
+    opacity:0.6;
+    text-align: center;
 }
 .row .d-text {
     font-size: 20px;
@@ -51,13 +72,45 @@
     text-align: center;
 }
 .c-button button{
+    display: block;
     width:160px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px;
-    min-height: 35px;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color:rgba(76, 77, 161, 0.918);
+    font-size: 18px;
+    margin: 1px auto 2px;
+    /* box-shadow: 2px 2px 2px black; */
+    height:60px;
+    border:none;
 }
 
 /*-----------------------------------BUTTON END------------------------------*/
+@media(min-width:576px){
+    .row .c-text{
+        text-align: right;
+        padding-right: 30px;
+    }
+}
+@media(max-width:575px){
+    #mainBody{
+        padding-left: 50px;
+    }
+    .row .c-text{
+        text-align: left;
+        padding-right: 30px;
+    }
+}
+
+@media(min-width:1200px){
+    #mainBody{
+        width:70%
+    }
+    .row .c-text{
+        text-align: right;
+        padding-right: 50px;
+    }
+}
 
 /*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
  
@@ -87,7 +140,7 @@
                     <a class="nav-link" href="Registration_1.html">Customer Registration</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Customer_status.html">Customer Status</a>
+                    <a class="nav-link" id="nav-highL" href="Customer_status.html">Customer Status</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Customer_database.html">Customer Database</a>
@@ -149,39 +202,40 @@
 
 <!----------------------MAIN BODY START------------------------>
 
-<h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Customer Data</h1>
 
-<div class="container">
+
+<div class="container" id="mainBody">
+    <h1 style="font-weight:600; margin:20px auto 20px;text-align: center; margin-bottom: 60px;">Customer Data</h1>
     <div class="row">
-        <div class="c-text col-sm-3">Name:</div>
-        <div class="d-text col-sm-3">Ramesh Kumar</div>
+        <div class="c-text col-sm-6">Name:</div>
+        <div class="d-text col-sm-6">Ramesh Kumar</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">Gender:</div>
-        <div class="d-text col-sm-3">Male</div>
+        <div class="c-text col-sm-6">Gender:</div>
+        <div class="d-text col-sm-6">Male</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">Date of birth:</div>
-        <div class="d-text col-sm-3">14 April, 1986</div>
+        <div class="c-text col-sm-6">Date of birth:</div>
+        <div class="d-text col-sm-6">14 April, 1986</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">Mobile Number:</div>
-        <div class="d-text col-sm-3">9019114545</div>
+        <div class="c-text col-sm-6">Mobile Number:</div>
+        <div class="d-text col-sm-6">9019114545</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">Email:</div>
-        <div class="d-text col-sm-3">rameshk145@gmail.com</div>
+        <div class="c-text col-sm-6">Email:</div>
+        <div class="d-text col-sm-6">rameshk145@gmail.com</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">Contact Address:</div>
-        <div class="d-text col-sm-3">#12, James Street, RT Nagar, Bangalore, Karnataka, India(560034)</div>
+        <div class="c-text col-sm-6">Contact Address:</div>
+        <div class="d-text col-sm-6">#12, James Street, RT Nagar, Bangalore, Karnataka, India(560034)</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">Permanent Address:</div>
-        <div class="d-text col-sm-3">#56, 3rd cross, 80 ft road, Hennur, Bangalore, Karnataka, India(560011)</div>
+        <div class="c-text col-sm-6">Permanent Address:</div>
+        <div class="d-text col-sm-6">#56, 3rd cross, 80 ft road, Hennur, Bangalore, Karnataka, India(560011)</div>
     </div>
     <div class="row">
-        <div class="c-text col-sm-3">ID Proof:</div>
+        <div class="c-text col-sm-6">ID Proof:</div>
         <div class="d-text col-sm-4"><img class="img-responsive" src="Aadhar_front.PNG" width="100%"></div>
     </div>
     <div class="row button-row">
