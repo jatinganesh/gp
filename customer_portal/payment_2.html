@@ -38,14 +38,6 @@
             width:100%;
             height:100px;
             }
-        h1 {
-            font-size: 50px;
-            color: rgb(0, 0, 0);
-            position: absolute;
-            left:37%
-            
-            
-        }
         #cl {
             float:left;
             
@@ -54,20 +46,23 @@
         
      
           .but2 {
-            display: block;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            background:rgba(74, 157, 212, 0.116);
-            font-size: 1.6em;         
-            width: 120px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto; 
-            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
-            
+			display: block;
+			width:150px;
+			color:white;
+			font-weight: 600;
+			border-radius: 9px;
+			background-color:rgba(76, 77, 161, 0.918);
+			font-size: 18px;
+			margin: 30px auto 2px;
+			/* box-shadow: 2px 2px 2px black; */
+			height:45px;
+			border:none;
         }
         .lock {
             text-align: center;
+			width:50%;
+			margin-left: auto;
+			margin-right: auto;
         }
 
     </style>
@@ -148,18 +143,20 @@
 
 
 <!------------------------------------------------------------------------>
-
-    <br><br><br><br><br><br><br>
-    <div class="lock">
-        <img src="lockSymbol.png" height="250px" width="550px">
-    </div>
-    <br><br><br><br><br><br>
-    
-    
-    <a href="payment_3.html" >
-        <button class="but2">Next</button><br>
-    </a>
-
+<div class="container">
+	<h1 style="text-align: center;font-weight: 600;margin-top: 30px;">Secure Payment Portal</h1>
+		<br><br>
+		
+		<div class="lock row">
+			<img src="lockSymbol.png" class="image-responsive" width="50%">
+		</div>
+		<br><br><br>
+		
+		
+		<a href="payment_3.html" >
+			<button class="but2">Next</button><br>
+		</a>
+</div>
     <script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
             <script src="bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
 

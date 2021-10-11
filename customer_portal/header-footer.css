@@ -39,9 +39,11 @@ z-index: 2;
 #nav-bar {
     background-color:rgb(12, 12, 51) !important; 
     border-top: none;
+    /* border-radius: 0px 50px 50px 0px; */
 }
 #nav-cont {
-    background-color: #02023d48;;
+    background-color: #02023d48;
+    /* border-radius: 40px 40px 40px 40px; */
 }               
 @media (min-width:1200px) {
     .navbar-collapse {
@@ -71,3 +73,75 @@ z-index: 2;
     box-shadow: 1px 0px 5px 1px inset;
 }
 /* ------------------------------------------------MAINBODY END------------------------------------------------ */
+
+/* ------------------------------------------------FOOTER------------------------------------------------ */
+
+footer {
+    background-color: #191947;
+    color: rgba(255, 255, 255, 0.87);
+    min-height:40px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    clear:both;
+}
+/* .foot {
+     padding:0px 0px 0px 60px; 
+} */
+.foot-title {
+    text-transform: uppercase;
+    font-size: 82%;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.514);
+}
+.foot-text {
+    text-decoration: underline;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 4px;
+}
+.footer-other {
+    margin-left: -30px;
+}
+#app-button img {
+    max-width:150px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+@media (max-width:767px){
+    footer > .foot {
+        /* display: block; */
+        border-bottom: 1px solid black;
+        padding:5px;
+    }
+}
+@media (max-width:576px){
+    .footer-other {
+        margin-left: 0px;
+    }
+    .foot-title {
+        text-align: center;
+    }
+    #app-button img {
+        margin-top: 20px;
+        max-width:100px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #logo-img {
+        background-color:rgb(12, 12, 51);  
+        border-radius: 50px 50px 50px 50px; 
+        border:none;
+    }
+}
+@media (max-width:992px){
+    .foot-text, .foot-text-row {
+        position:absolute;
+        visibility: hidden;
+    }
+   
+}
+/* ------------------------------------------------FOOTER END-------------------------------------------- */
