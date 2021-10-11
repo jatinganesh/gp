@@ -18,6 +18,46 @@
         a{
             text-decoration: none;
         }
+        body {
+    background-color: #ececed;
+}
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+	border-radius: 25px;
+    padding-left: 30px;
+    /* background-color: #ececed; */
+}
+.main  h4 {
+		font-weight: 600;
+		color: black;
+		opacity:0.8
+	}
+    .h2_p1{
+	text-align: center;
+}
+input[type=radio] {
+    width: 30px;
+    height: 30px;
+	padding-left: 50px;
+}
+.r_inputs {
+		font-size: 24px;
+		padding-left: 20px;
+		width:30%;
+		clear:right;
+		position: relative;
+		top:-3px;
+	}
+    .radio-div {
+	/* text-align: center; */
+	margin-left: 50px;
+	margin-right: auto;
+}
         .pb { 
             background-color: rgb(43, 107, 226); 
             position: fixed;
@@ -48,18 +88,17 @@
         }
         
      
-        #article {
+        #button_bot {
             display: block;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            background:rgba(74, 157, 212, 0.116);
-            font-size: 1.6em;         
-            width: 250px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto; 
-            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
-            
+		width:150px;
+		color:white;
+		font-weight: 600;
+		border-radius: 9px;
+		background-color:rgba(76, 77, 161, 0.918);
+		font-size: 18px;
+		margin: 60px auto 2px;
+		height:45px;
+		border:none;
         }
 
         h3{
@@ -71,19 +110,47 @@
         font-size: 24px;
     }
     #ab {
-        margin-top: 50px;
+        /* margin-top: 50px;
         height: 100px;
-        width:100%;
+        width:100%; */
+        border-radius: 10px;
+    background-color: rgba(74, 53, 94, 0.253);
+    border:none;
+	width:250px;
+	height:50px;
+    text-align: center;
+    
     }
     #ac {
         width:50%;
         border-radius: 5px;
     }
     .rest {
-        width:65%;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
+    @media(min-width:1000px){
+
+#mainBody{
+    width:50%
+}
+}
+@media(max-width:600px)
+{
+.radio-div {
+/* text-align: center; */
+margin-left: 50px;
+margin-right: auto;
+}
+.r_inputs{
+    font-size: 18px;
+}
+#mainBody{
+    padding-left:5px;
+}
+}
+
 
 
     </style>
@@ -165,38 +232,39 @@
 
 <!------------------------------------------------------------------------>
 
+<div class="container main" id="mainBody">
+	<h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 60px;">Card Block/Unblock</h1>
 
-<h1 style="text-align: center;font-weight: 600;margin-top: 30px;">Card Block/Unblock</h1>
-    <div style='transform: scale(0.65); position: relative; top: -100px;'>
-        <h3>What would you like to do?</h3>
-        <br>
-      
-        <div id='block-11' style='padding: 10px;'>
-          <label for='option-11' style=' padding: 5px; font-size: 2rem;'>
-            <input type='radio' name='option' value='6/24' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-            Block Card</label>
-        </div>
-        <br>
+	<div class="row" id="row2">
+		<h4 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Card is currently</h2>
+		<h4 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">UNBLOCKED</h2>
+	</div>
+	
+<br><br>
+<hr>
+<br><br> 
 
-      
-        <div id='block-12' style='padding: 10px;'>
-          <label for='option-12' style=' padding: 5px; font-size: 2rem;'>
-            <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-            Unblock Card</label>
-        </div>
-        
-
-        
-      </div>
-
-      <div class="rest">
-        <section id="aa">Please enter the reason for doing so</section>
+    	<div class="row" id="row1"><h4>What would you like to do?</h4></div><br>
+		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%; font-size: 25px;" ><span class="r_inputs">Block</span></div>
+		<br>
+		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%;" ><span class="r_inputs">Unblock</span></div>
+	
+<br><br>
+<hr>
+<br><br>
+    
+    <div class="rest">
+        <section id="aa">Please enter the reason for doing so</section><br>
         <input type="text" placeholder="Enter reason here" id="ab">
         <a href="Dashboard_4.html">
-        <button type="button" id="article" >Submit</button>
+        <button type="button" id="button_bot" >Submit</button>
         </a>
     </div>
-   
+
+</div>
+
+
+      
     
     
 

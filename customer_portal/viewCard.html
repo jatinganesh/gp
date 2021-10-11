@@ -12,6 +12,21 @@
             margin: 0px; 
             font-family: Arial, Helvetica, sans-serif;
         }
+        body {
+    background-color: #ececed;
+}
+
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    
+    /* background-color: #ececed; */
+}
 
         a{
             text-decoration: none;
@@ -45,19 +60,21 @@
      
         #last {
             display: block;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            background:rgba(74, 157, 212, 0.116);
-            font-size: 1.6em;         
-            width: 250px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto; 
-            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
+    width:150px;
+    color:white;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color: rgba(76, 77, 161, 0.918);
+    font-size: 18px;
+    margin:80px auto 10px;
+    /* box-shadow: 2px 2px 2px black; */
+    height:45px;
+    border:none;
             
         }
 
-        .card {
+
+        .cardi {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -65,13 +82,40 @@
         }
 
         .otpArea {
-            width:40%;
+            text-align: center;
+            width:100%;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 30px;
+            
         }
         .otp1 {
             font-size: 22px;
         }
+        .otp12{
+            font-weight: 600;
+            opacity:0.7;
+            font-size: 22px;
+        }
+        .inputField {
+    width: 230px;
+    min-height: 35px;
+    max-height: 50px;
+    margin:10px 0px 10px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(207, 207, 207);
+}
+    @media(min-width:1200px){
+        #mainBody{
+            width:70%
+        }
+}
+@media(max-width:500px){
+    #mainBody img{
+        width:90%;
+    }
+}
 
     </style>
     
@@ -152,31 +196,32 @@
 <!------------------------------------------------------------------------>
 
     
-    
-<h1 style="text-align: center;font-weight: 600;margin-top: 30px;">View Card</h1>
 
+<div class="container"id="mainBody">
     
-
+<h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 50px;">View Card</h1>
+    
     <div class="otpArea">
-    <a href="#" class="otp1">Click here to send the OTP for viewing the card</a><br><br>
-    <div class="otp1">Enter the OTP:</div><br>
-    <input type="text" placeholder="OTP">
-    <button type="button ">Submit</button>
-    <br>
+        <a href="#" class="otp1">Click here to send the OTP for viewing the card</a><br><br>
+        <div class="otp12">Enter the OTP:</div><br>
+        <input type="password" placeholder="OTP" class="inputField">
+        <br>
     </div>
-
-
     <br>
-    <img src="cardFront.PNG" height="340px" width="40%" class="card">
+    <hr>    
+    <br><br><br>
+    <img src="cardFront.PNG" width="60%" class="cardi" class="image-responsive">
     <br>
-    <img src="cardBack.PNG" height="340px" width="40%" class="card"> 
+    <img src="cardBack.PNG" width="60%" class="cardi" class="image-responsive"> 
    
     
     
     
     <a href="Dashboard_4.html" >
-        <button id="last">Back to Dashboard</button><br>
+        <button id="last">Done</button><br>
     </a>
+
+</div>
 
     <!----------------------FOOTER START------------------------>
 

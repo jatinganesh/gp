@@ -14,6 +14,21 @@
             margin: 0px; 
             font-family: Arial, Helvetica, sans-serif;
         }
+        body {
+            background-color: #ececed;
+        }
+
+        #mainBody {
+            background-color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 10px 2px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-radius: 25px;
+            
+            /* background-color: #ececed; */
+        }
         header {
             z-index: 1;
         }
@@ -36,104 +51,69 @@
         border:3px solid rgba(0, 0, 0, 0.459);
     }
         
-        .h2_sd{
-            margin-left: 260px;
-        }
         
 /* --------------------------------------------*/
 .dropbtn {
-  background-color: rgba(151, 91, 201, 0.116);
-  color: rgb(0, 0, 0);
-  padding: 16px;
-  font-size: 16px;
-  border: 2px solid black;
-  margin:47px 10px 10px 10px;
-  border-radius: 5px;
-  position: -webkit-sticky;
-position: sticky;
-box-shadow: 5px 10px 20px rgba(255, 255, 255, 0);
-top: 0px;
-font-size: 20px;
-font-weight: bold;
-
-
+    display: block;
+    width:250px;
+    color:white;
+    font-weight: 600;
+    border-radius: 0px;
+    background-color:rgba(116, 118, 255, 0.76);
+    font-size: 18px;
+    margin:20px auto 50px;
+    /* box-shadow: 2px 2px 2px black; */
+    height:80px;
+    border:none;
+}
+.btn.btn-primary{
+    background-color: rgba(116, 118, 255, 0.63);
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+}
+.btn.btn-primary:hover {
+    background-color: rgb(116, 118, 255);
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-  
+.h2_sd {
+    font-size: 20px;
+}
+.card.card-body{
+    background-color: #ececed;
+    box-shadow: 2px 2px 5px 1px inset;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 2px 6px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #54269e71;}
         /* --------------------------------------------*/
-
-       
+    .download_but {
+        background-color: rgba(76, 77, 161, 0.918);
+        width:270px;
+        height:60px;
+        text-align: center;
+        border-radius: 10px;
+        vertical-align: middle;
+        padding:10px;
+        font-size: 20px;
+        /* margin:80px 30px 30px 250px; */
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+        /* border: 1px solid; */
+        box-shadow: 0px 0px 3px 1px #888888;
+    }
+    .db_text{
+        position:relative;
+        bottom:0px;
+    }
+    @media(min-width:900px){
+    #mainBody{
+        width:55%
+    }
+}
         
      
-        .but2 {
-            display: block;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background:rgba(74, 157, 212, 0.116);
-                     
-            width: 200px;
-            border-radius: 5px;
-            
-            margin-left: auto;
-            margin-right: auto;
-
-            
-        }
-
-
-        .container.l {
-            background-color: darkcyan;
-            width:30%;
-            height:60px;
-            text-align: center;
-            border-radius: 10px;
-            vertical-align: middle;
-            padding:10px;
-            font-size: 24px;
-            margin:80px 30px 30px 250px;
-            color: white;
-			border: 1px solid;
-			padding: 10px;
-			box-shadow: 5px 8px 8px 8px #888888;
-        }
-        .db{
-            position:relative;
-            bottom:0px;
-        }
-        .r {
-            margin-top: 80px;
-        }
-        .ultimate{
-            margin-left: 260px;
-        }
-
 
     </style>
     
@@ -214,56 +194,44 @@ font-weight: bold;
 
 <!------------------------------------------------------------------------>
 
-<h1 style="text-align: center;font-weight: 600;margin-top: 30px;">Statement Download</h1>
-    <a href="#">
-        <div class="container r l">
-            <span class="db">Download Recent Statement</span>
-            <img src="downloadIcon.png" height="40px" width="40px" class="di">
+<div class="container" id="mainBody">
+    <h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 80px;">Statement Download</h1>
+        <a href="#">
+            <div class="download_but">
+                <span class="db_text">Latest Statement</span>
+                <img src="downloadIcon.png" height="40px" width="40px" class="di">
+            </div>
+        </a>
+        <br><br>
+        <br> <br>
+
+        <div class="row">
+            <p class="filter_but">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <h2 class="h2_sd"> Or Find By Month Here</h2>
+                </button>
+            </p>
         </div>
-    </a>
-    <br><br>
-    <br> <br>
-       <h2 class="h2_sd">Find Account Statement</h2>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <br>
+                <div class="">
+                    <button class="dropbtn but2"><div id="choose_month">Choose month:</div><input type="month"></button>
+                </div>
+                <br>
 
-
-    <div class="ultimate">
-    <div class="dropdown">
-        <button class="dropbtn but2">Month</button>
-        <div class="dropdown-content">
-        <a>January</a><a>February</a>
-        <a>March</a><a>April</a>
-        <a>May</a><a>June</a>
-        <a>July</a><a>August</a>
-        <a>September</a><a>October</a>
-        <a>November</a><a>December</a>
+                <a href="#">
+                    <div class="download_but">
+                        <span class="db_text">Selected Statement</span>
+                        <img src="downloadIcon.png" height="40px" width="40px" class="di">
+                    </div>
+                </a>
+                <br><br><br>
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="dropdown">
-        <button class="dropbtn but2">Year</button>
-        <div class="dropdown-content">
-        <a>2010</a><a>2011</a>
-        <a>2012</a><a>2013</a>
-        <a>2014</a><a>2015</a>
-        <a>2016</a><a>2017</a>
-        <a>2018</a><a>2019</a>
-        <a>2020</a><a>2021</a>
-        
-        </div>
-    </div>
-    </div>
 
 
-
-    <a href="#">
-        <div class="container l">
-            <span class="db">Download Selected Statement</span>
-            <img src="downloadIcon.png" height="40px" width="40px" class="di">
-        </div>
-    </a>
-
-    
-
+</div>
     <!----------------------FOOTER START------------------------>
 
     <footer>

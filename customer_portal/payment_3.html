@@ -9,102 +9,167 @@
 <link rel="stylesheet" href="header-footer.css">
 <style>
         
-        *{
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body {
-       
-            
-            margin: 0px; 
-            box-sizing: border-box;
-        }
+body {
+    background-color: #ececed;
+}
 
-        a{
-            text-decoration: none;
-        }
-        
-        #compName {
-        font-size: 2em;
-        font-weight: 500;
-        text-shadow: 2px 2px 2px rgb(146, 145, 145);
-        
+#mainBody {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    
+    /* background-color: #ececed; */
+}
+
+#r3_title{
+    text-align: center;
+    font-weight: 600;
+}
+#r3_subT {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+#pad-maker{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn a {
+    text-decoration: none;
+}
+
+#preview {
+    /* background-color: grey; */
+    background-color:rgba(47, 47, 73, 0.849);
+    height:500px;
+    position: relative;
+    margin:70px auto 70px;
+    border-radius: 15px;
+    
+    max-width: 700px;
+    z-index: 0;
+    border: 2px solid rgba(61, 61, 61, 0.432);
+}
+#prew-title, #prew-print, #prew-share {
+    position: absolute;
+    border: 2px solid rgb(24, 24, 24);
+    padding:7px;
+    background-color: rgba(255, 255, 255, 0.822);
+    min-width: 70px;
+    border-radius:5px;
+    text-align: center;
+}
+#prew-print, #prew-share {
+    font-weight: 600;
+
+}
+#prew-print a, #prew-share a{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+#prew-title{
+    position: static;
+    text-align: center;
+    padding:2px;
+    font-weight: 600;
+    
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.822);
+    border: none;
+}
+#prew-print{
+    bottom: -2px; left: -2px;
+    border-radius: 0px 5px 0px 15px;
+}
+#prew-share{
+    bottom: -2px; right: -2px;
+    border-radius: 5px 0px 15px 0px;
+}
+#mini-preview {
+    width:99%;
+    height:420px;
+    background-color: whitesmoke;
+    margin: 0px auto 0px;
+    box-shadow: 3px 3px 3px inset;
+    border-radius: 5px;
+    overflow: auto;
+}
+#mini-preview .p-text{
+    font-size:20px;
+    margin-left:35px;
+    margin-bottom: 5px;
+}
+#mini-preview .p-title{
+    font-size:25px;
+    margin-left:15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#mini-preview .p-top {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+#mini-preview .prew-img{
+    display: block;
+    margin:5px auto 10px;
+}
+#reg3_button-section {
+    margin-top: 220px;
+}
+#reg3_button-section .btn{
+    display: block;
+                /* display: block;
+                width:150px;
+                color:white;
+                font-weight: 600;
+                border-radius: 9px;
+                background-color:rgba(76, 77, 161, 0.918);
+                font-size: 18px;
+                height:45px;
+                border:none; */
+    margin:60px auto 50px;
+}
+#reg3_button-section .btn button {
+    min-width:150px;
+    padding:10px;
+    min-height:60px;
+    display: block;
+                width:150px;
+                color:white;
+                font-weight: 600;
+                border-radius: 9px;
+                background-color:rgba(76, 77, 161, 0.918);
+                font-size: 18px;
+                height:45px;
+                border:none;
+                margin-left: auto;
+                margin-right: auto;
+                
+}
+@media (max-width:767px){
+
+    #reg3_button-section {
+    margin-top: -55px;
+}
+}
+@media(min-width:1200px){
+    #mainBody{
+        width:75%
     }
-    .fix {
-        position:sticky;
-        top:0px;
-    }
-    .navbar {
-        border:3px solid rgba(0, 0, 0, 0.459);
-    }
-        #cl {
-            float:left;
-            
-        }
-       
-        
-     
-        .but2 {
-            display: block;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            background:rgba(74, 157, 212, 0.116);
-            font-size: 1.6em;         
-            width: 250px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto; 
-            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
+}
 
-            clear: both;
-            
-        }
-        .container.l {
-            float:left;
-            width:49%;
-            height:550px;  
-        }
-        .cont2{
-            border:none;
-        }
 
-        .row.l {
-            width:80%;
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 20px 20px 20px 150px;
-            margin-left: 10%;
-        }
-        .contain {
-            background-color: rgba(0, 139, 139, 0.521);
-            width:40%;
-            height:60px;
-            text-align: center;
-            border-radius: 10px;
-            vertical-align: middle;
-            padding:10px;
-            font-size: 24px;
-            margin:30px 30px 30px 250px;
-            color: rgb(48, 46, 46);
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 8px 8px 8px #8888888c;
+/*-----------------------------------MAIN CONTENT ENDS----------------------------------------*/
+ 
+</style> 
 
-        }
-        .db{
-            position:relative;
-            bottom:0px;
-        }
-        
-        .hed{
-            width:60%;
-            background-color: darkcyan;
-            box-shadow: none;
-            margin:30px 30px 30px 180px;
-            color: white;
-            
-        }
-    </style>
+
     
 </head>             
 
@@ -183,10 +248,10 @@
 
 <!------------------------------------------------------------------------>
 
-<h1 style="text-align: center;font-weight: 600;margin-top: 30px;">Payment Success!</h1>
+<!-- <h1 style="text-align: center;font-weight: 600;margin-top: 30px;">Payment Success!</h1>
    <br><br><br>
     <div class="container l">
-        <div class="row l">        
+        <div class="row l col-sm-6">        
         <h3>Payment Details</h3>
         <h4>Detail 1:........</h4>
         <h4>Detail 2:........</h4>
@@ -229,7 +294,63 @@
     
     <a href="Dashboard_4.html" >
         <button class="but2">Back to Dashboard</button><br>
-    </a>
+    </a> -->
+    <!----------------------MAIN BODY START------------------------>
+<div id="mainBody" class="container">
+    <div class="row" id="pad-maker">
+        <h1 id="r3_title">Payment Confirmation</h1>
+        <div class="col-md-7" id="preview">
+            <div id="prew-title">Payment Details</div>
+            <div id="mini-preview">
+                <div class="p-top">Payment Successful !</div>
+
+                <div class="p-title">Basic Details:</div>
+                <div class="p-text">Date: 28th May, 2021</div>
+                <div class="p-text">Time: 21:56 hrs</div>
+                <div class="p-text">Location: Bangalore</div>
+                <div class="p-text">Amount: Rs. 24,560</div><br>
+
+                <div class="p-title">Other Details:</div>
+                <div class="p-text">Transaction ID: 12122121</div>
+                <div class="p-text">Confirmation ID: 1</div>
+                <div class="p-text">Reference Number: 36323656</div>
+                <div class="p-text">Payment Pending: Rs. 0</div>
+
+                <div class="p-top">Scanable Code !</div>
+                <img src="qr_code.png" width="60%" class="prew-img img-responsive">
+                
+                
+                <!-- <div class="p-text">Gender: Male</div>
+                <div class="p-text">Date Of Birth: 29 January 1978</div>
+                <div class="p-text">Mobile No: 8974456874</div>
+                <div class="p-text">Email ID: ramesh123@gmail.com</div>
+                <div class="p-title">Address</div>
+                <div class="p-text">Contact Address: #123, James street, Bel Circle</div>
+                <div class="p-text">Permanent Address: #123, James street, Bel Circle</div>
+                <div class="p-text">Country: India</div>
+                <div class="p-text">State: Karnataka</div>
+                <div class="p-text">City: Bangalore</div>
+                <div class="p-text">Pin code: 560077</div>
+                <div class="p-title">Upload Information</div>
+                <div class="p-text">ID Proof Type: Aadhar Card</div>
+                <img src="Aadhar_front.PNG" width="60%" class="prew-img img-responsive">
+                <br>
+                <img src="Aadhar_back.PNG" width="60%" class="prew-img img-responsive"> -->
+            </div>
+            <div id="prew-print"><a href="#">Print</a></div>
+            <div id="prew-share"><a href="#">Share</a></div>
+        </div>
+        <div class="col-md-5">
+            <div id="reg3_button-section">
+                <div class="btn"><a href="#"><button id="r3_b1">Download</button></a></div>
+                <div class="btn"><a href="Dashboard_4.html"><button id="r3_b2">Done</button></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
     <!----------------------FOOTER START------------------------>
 
