@@ -18,37 +18,51 @@
         padding:0px;
         font-family: Arial, Helvetica, sans-serif;
     }
+    body {
+			background-color: #ececed;
+			/* background-color: white; */
+		}
+		#mainBody {
+			background-color: white;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			box-shadow: 0px 0px 10px 2px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			/* padding-right: 20px;
+			padding-left: 50px; */
+			/* width:80%; */
+			border-radius: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			
+			/* background-color: #ececed; */
+		}
     
     
-    #compName {
-        font-size: 2em;
-        font-weight: 500;
-        text-shadow: 2px 2px 2px rgb(146, 145, 145);
-        
-    }
-    .fix {
-        position:sticky;
-        top:0px;
-    }
-    .navbar {
-        border:3px solid rgba(0, 0, 0, 0.459);
-    }
-   
-    section {
-        padding-top: 15%;
-        margin-bottom: 50px;
-    }
-    section {
-        font-weight: bold;
-    }
+
+
     #complaint {
         margin-top: 50px;
         height: 100px;
         width:100%;
+        background-color:rgba(69, 70, 87, 0.219);
+        border-radius:25px 25px 0px 0px;
+        border:3px solid rgba(76, 77, 161, 0.918);
+        padding:15px;
+
     }
     #compBut {
         width:100%;
-        border-radius: 5px;
+        border-radius: 0px 0px 25px 25px;
+        border:none;
+        background-color:rgba(76, 77, 161, 0.918);
+        color: white;
+    }
+    .module h4{
+        font-size:24px ;
+        font-weight: 600;
+        opacity:0.78;
     }
     .mail {
         
@@ -56,47 +70,53 @@
         margin-right: auto;
         text-align: center;
     }
-    .img {
-        background-color: wheat;
-        float:right;
-        border-radius: 30px;
-        clear:both;
-        margin-top: 10%;
+
+    #chatBotDiv{
+        position:absolute;
+        right:0px;
+        top:400px;
     }
+    .card h4{
+        font-size: 20px;
+        font-weight: 600;
+        opacity: 0.7;
+        border-radius: 15px 15px 15px 0px;
+        background-color: rgb(91, 100, 185);
+        padding:5px;
+        border:2px solid white;
+    }
+    .card input {
+        border-radius: 15px 15px 0px 15px;
+        padding-left: 15px;
+    }
+    .card.card-body{
+        border-radius: 15px;
+        box-shadow:1px 1px 3px 1px inset; 
+    }
+
    @media (max-width: 768px)
    {
        .img{
         position:static;   
         margin-left: auto;
            margin-right: auto;
-          
+       }
+       .module h4{
+           font-size: 19px;
        }
    }
-   .stick {
-       position: sticky;
-       top:0px;
-   }
-  
-
-    .fixy {
-        position: fixed;
-        right:0px;
-        top:30%;
+   @media(max-width:550px){
+    #chatBotDiv{
+        position:static;
+        text-align: center;
     }
-    .b {
-            display: block;
-            margin-top: 150px;
-            margin-bottom: 20px;
-            background:rgba(74, 157, 212, 0.116);
-            font-size: 1.6em;         
-            width: 250px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto; 
-            box-shadow: 5px 10px 20px rgb(0, 0, 0) ;
-            clear: both;
-            
-        }
+   }
+   @media(min-width:950px){
+		#mainBody{
+			width:60%;
+            padding:80px;
+		}
+    }
   
 </style>
 
@@ -179,28 +199,46 @@
 
     
 <h1 style="text-align: center;font-weight: 600;margin-top: 30px;">Contact Us</h1>
-    <div class="container">
-        <div class="row">
+    <div class="container" id="mainBody">
+        <div class="">
             
-            <div class="col-md-6 col-sm-12">
-                <section>Please drop a message/ query/complaint right here and we will get back to you shortly</section>
+            <div class="module">
+                <h4>Please drop a message/ query/complaint right here and we will get back to you shortly</h4>
                 <input type="text" placeholder="Enter message here" id="complaint">
                 <button type="button" id="compBut">Submit</button>
             </div>
-        
-        
-            <div class="row col-md-6 col-sm-12 mail">
-                <section>Alternatively, reach us at:</section>
+        <br><br>
+        <br><br>
+            <div class="mail module">
+                <h4>Alternatively, reach us at:</h4>
                 <article> Ph.no: 8971128964 </article>
                 <article> Email: company@comp.co.in </article>
             </div>
+            <br>
         </div>
     </div>
-    <div class="img fixy">
-    <img src="chatbot.png" height="100px" width="100px">
+    <p>
+    <div id="chatBotDiv">
+    <div  class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="background-color: transparent; border:none;">
+        <img src="chatbot2.png" height="180px" width="180px">
     </div>
+    <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 250px;">
+            <h4>How may I help you?</h4><br>
+            <input type="text" class="inputField">
+          </div>
+        </div>
+      </div>
+    </div></p>
+    <!-- <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          Toggle width collapse
+        </button>
+      </p> -->
+      
 
-    <br><br><br><br><br><br>
+    <br><br>
 
     <!----------------------FOOTER START------------------------>
 
