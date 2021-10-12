@@ -18,57 +18,66 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }  
+/*-----------------------------------JUMBOTRON START----------------------------------------*/
+#jumb-mainT{
+    background-image: url("parrish-freeman-0d-z8cJGIR4-unsplash.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    min-height: 650px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-size: 100%;
+    background-position: center 40%;
+    background-attachment: fixed;
+    padding-left: 5%;
+    padding-top:6%;
+}
+/*-----------------------------------JUMBOTRON END----------------------------------------*/
+.row .img img {
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-part .text-title {
+    font-size: 24px;
+    font-weight: 600;
+    opacity:0.8;
+}
+.text-part .sub-text {
+    font-size: 22px;
+    opacity:0.5;
+}
+.text-part.part-1 {
+    border-top: 1px solid black;
+    border-left: 4px solid black;
+    /* border-bottom: 1px solid black; */
+    border-radius: 20px 0px 0px 0px;
+}
+.text-part.part-2 {
+    /* border-top: 1px solid black; */
+    border-right: 4px solid black;
+    /* border-bottom: 1px solid black; */
+    border-radius: 10px;
+}
+.text-part.part-3 {
+    /* border-top: 1px solid black; */
+    border-left: 4px solid black;
+    border-bottom: 1px solid black;
+    border-radius:  0px 0px 0px 20px;
+}
 
-.jumbotron {
-    text-align: center;
-    height: 450px;
-    /*overflow:hidden;*/
-    
+@media (max-width:767px) {
+    #jumb-mainT{
+        background-size: 250%;
+    }   
 }
-.updates {
-    position:fixed;
-    top:40%;
-    bottom:auto;
-    left:0px;
-    background-color: rgb(137, 43, 226);
-    width:30px;
-    text-align: center;
-    padding:5px; 
-    font-size: 24px;   
+@media(min-width:1200px){
+        #jumb-mainT{
+        background-position: center 60%;
+    }   
 }
-.marq {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 40px 10px 80px;
-}
-.mid_body {
-    margin-left: 150px;
-    height:300px;
-}
-.mid_body section {
-    font-size:24px;
-    font-weight: bold;
-    margin-left: 100px;
-    padding-top: 50px;
-}
-.mid_body article {
-    width:40%;
-    text-align: right;
-    margin-top: 50px;
-}
-#compName {
-        font-size: 2em;
-        font-weight: 500;
-        text-shadow: 2px 2px 2px rgb(146, 145, 145);
-        
-    }
-    .fix {
-        position:sticky;
-        top:0px;
-    }
-    .navbar {
-        border:3px solid rgba(0, 0, 0, 0.459);
-    }
     </style>
 </head> 
 
@@ -148,44 +157,42 @@ body {
     </header>
 
 
+    <h2 id="jumb-mainT">Company Value or Quote</h2>
+            
+
+<div class="container">
     <br><br>
-    <div class="jumbotron">
-            <img src="DashBack_2.jpg" height="400px" width=80%> 
+    <div class="row">
+        <div class="text-part col-sm-8 part-1"><br>
+            <div class="text-title">Your security our priority</div><br><br>
+            <div class="sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magni fugit laborum doloribus ut est iusto quis, distinctio provident accusamus qui tenetur culpa quo unde praesentium laudantium officia iste necessitatibus!</div>
+        </div>
+        <div class="img col-sm-4">
+            <img src="locker_img.jpg" width="70%" class="image-responsive">
+        </div>
     </div>
-            
-
-    <div class="updates">U<br>P<br>D<br>A<br>T<br>E<br>S</div>
-
-                                    <br>
-
-                                    <!-- <div class="marq">
-                                        Number of Satisfied Customers : 14,509
-                                        <nbsp style="margin-left: 200px;">  </nbsp>
-                                            Years In Service : 12
-                                            <nbsp style="margin-left: 200px;">  </nbsp>
-                                            Number of cards made: 20,547
-                                            <nbsp style="margin-left: 200px;">  </nbsp>
-                                       
-                                    </div>            -->
-           
-            <br><br>
-            
-            <div class="mid_body">
-            <img src="DashImg3.jpg" height="300" width="500" style="float:right; clear: both;">
-            <section>Section 1</section>
-                <article>Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text</article>
-            </div>
-            <div class="mid_body">
-                <img src="DashImg2.jpg" height="300" width="500" style="float:left;  clear: both;">
-                <section style="float: left; margin-left: 100px; margin-right: 250px;">Section 2</section>
-                    <article style="float: left; margin-left: 100px; width: 600px; ">Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text</article>
-            </div>
-            <div class="mid_body">
-                    <img src="dashImg1.png" height="300" width="500" style="float:right;  clear: both;">
-                    <section>Section 3</section>
-                        <article>Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text</article>
-            </div>
-           
+    <br><br>
+    <div class="row">
+        <div class="img col-sm-4">
+            <img src="laptop_stat_img.jpg" width="90%" class="image-responsive">
+        </div>
+        <div class="text-part col-sm-8 part-2"><br>
+            <div class="text-title">Be on top of your finances</div><br><br>
+            <div class="sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid dignissimos officiis necessitatibus eaque, at debitis consequuntur nobis, assumenda sequi sed ullam vitae voluptatibus consequatur esse architecto ratione, nisi suscipit.</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="text-part col-sm-8 part-3"><br>
+            <div class="text-title">Rewards Unlimited!</div><br><br>
+            <div class="sub-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptatum modi omnis necessitatibus aspernatur autem officia asperiores, molestias enim optio adipisci nostrum labore consequuntur, dolorum a eligendi cumque quidem repellendus.</div>
+        </div>
+        <div class="img col-sm-4">
+            <img src="travel-pic.jpg" width="70%" class="image-responsive">
+        </div>
+    </div>
+    <br><br><br>
+</div>
             
 
 
