@@ -5,6 +5,14 @@ a.a1 {
     opacity:0.4;
 }
 
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
 /* ------------------------------------------------NAVBAR------------------------------------------------ */
 .navbar {
     border:3px solid rgba(0, 0, 0, 0.459);
@@ -87,8 +95,40 @@ z-index: 2;
 }
 /* ------------------------------------------------MAINBODY END------------------------------------------------ */
 
-/* ------------------------------------------------FOOTER------------------------------------------------ */
 
+/************************************************************************
+**************************************************************************/
+
+/*************************************   FOOTER   ***********************************/
+
+footer{padding:40px 0 10px 0;
+    margin-top:10px;
+    background:#191947;}
+    
+    footer, footer a, .footer-social li a{color:#999999;}
+    
+    .foo-block, .widget-footer{margin-bottom:36px;}
+    .foo-block .widgettitle{ color:#ffffff; }
+    
+    .copyright{margin-top:18px;
+    display:flex;}
+    
+    .footer-copy{font-size:12px;
+    letter-spacing:1px;
+    flex:1 1 auto;}
+    
+    .footer-social{text-align:right;}
+    
+    /************************************************************************
+    **************************************************************************/
+
+
+
+
+
+
+ /* ------------------------------------------------OLD FOOTER------------------------------------------------ */
+/*
 footer {
     background-color: #191947;
     color: rgba(255, 255, 255, 0.87);
@@ -98,9 +138,7 @@ footer {
     font-size: 20px;
     clear:both;
 }
-/* .foot {
-     padding:0px 0px 0px 60px; 
-} */
+
 .foot-title {
     text-transform: uppercase;
     font-size: 82%;
@@ -110,7 +148,7 @@ footer {
 }
 .foot-text {
     text-decoration: underline;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 4px;
 }
@@ -124,7 +162,7 @@ footer {
 }
 @media (max-width:767px){
     footer > .foot {
-        /* display: block; */
+        display: block;
         border-bottom: 1px solid black;
         padding:5px;
     }
@@ -157,4 +195,5 @@ footer {
     }
    
 }
-/* ------------------------------------------------FOOTER END-------------------------------------------- */
+*/   
+/* ------------------------------------------------ OLD FOOTER END-------------------------------------------- */
