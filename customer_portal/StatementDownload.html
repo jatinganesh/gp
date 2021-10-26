@@ -15,14 +15,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         body {
-            background-color: #ececed;
+            /* background-color: #ececed; */
+			background-color: white;
         }
 
         #mainBody {
             background-color: white;
             margin-top: 30px;
             margin-bottom: 30px;
-            box-shadow: 0px 0px 10px 2px;
+            box-shadow: 0px 0px 5px 1px;
             padding-top: 50px;
             padding-bottom: 50px;
             border-radius: 25px;
@@ -55,15 +56,16 @@
 /* --------------------------------------------*/
 .dropbtn {
     display: block;
-    width:250px;
+    width:230px;
     color:white;
     font-weight: 600;
     border-radius: 0px;
     background-color:rgba(116, 118, 255, 0.76);
     font-size: 18px;
-    margin:20px auto 50px;
+    margin:0px auto 50px;
+    border-radius: 10px;
     /* box-shadow: 2px 2px 2px black; */
-    height:80px;
+    height:62px;
     border:none;
 }
 .btn.btn-primary{
@@ -81,11 +83,7 @@
 .h2_sd {
     font-size: 20px;
 }
-.card.card-body{
-    background-color: #ececed;
-    box-shadow: 2px 2px 5px 1px inset;
-    border-radius: 20px;
-}
+
 
         /* --------------------------------------------*/
     .download_but {
@@ -196,7 +194,7 @@
 <!------------------------------------------------------------------------>
 
 <div class="container" id="mainBody">
-    <h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 80px;">Statement Download</h1>
+    <h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 30px;">Statement Download</h1>
         <a href="#">
             <div class="download_but">
                 <span class="db_text">Latest Statement</span>
@@ -204,32 +202,33 @@
             </div>
         </a>
         <br><br>
-        <br> <br>
 
         <div class="row">
-            <p class="filter_but">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <h2 class="h2_sd"> Or Find By Month Here</h2>
-                </button>
-            </p>
+                    <h2 class="h2_sd" style="text-align: center; font-weight: 600; opacity:0.7;"> OR </h2>
         </div>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <br>
-                <div class="">
-                    <button class="dropbtn but2"><div id="choose_month">Choose month:</div><input type="month"></button>
-                </div>
-                <br>
 
-                <a href="#">
-                    <div class="download_but">
-                        <span class="db_text">Selected Statement</span>
-                        <img src="downloadIcon.png" height="40px" width="40px" class="di">
-                    </div>
-                </a>
-                <br><br><br>
-            </div>
-        </div>
+        <br><br>
+
+        <div class="row" id="collapseExample">
+            
+                <div class="col-sm-6">
+                    <button class="dropbtn but2 col-sm-6">
+                        <div id="choose_month">Choose: <input type="month">
+                        </div>
+                    </button>
+                </div>
+                
+                <div class="col-sm-6">
+                    <a href="#">
+                        <div class="download_but col-sm-6">
+                            <span class="db_text">Selected Statement</span>
+                            <img src="downloadIcon.png" height="40px" width="40px" class="di">
+                        </div>
+                    </a>
+                </div>
+
+                
+         </div>   
 
 
 </div>

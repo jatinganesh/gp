@@ -16,15 +16,16 @@
 		text-decoration: none;
 	}
 	body {
-    background-color: #ececed;
+    /* background-color: #ececed; */
+			background-color: white;
 }
 #mainBody {
     background-color: white;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 10px 2px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    box-shadow: 0px 0px 5px 1px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 	border-radius: 25px;
     padding-left: 30px;
     /* background-color: #ececed; */
@@ -37,14 +38,14 @@
 		border-radius: 9px;
 		background-color:rgba(76, 77, 161, 0.918);
 		font-size: 18px;
-		margin: 60px auto 2px;
+		margin: 30px auto 2px;
 		height:45px;
 		border:none;
 	}
-	.main  h4 {
+	.main  h6 {
 		font-weight: 600;
 		color: black;
-		opacity:0.8
+		opacity:0.6;
 	}
 	.main .row {
 		/* margin-top: 30px;
@@ -88,6 +89,18 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+select.s1{
+	width:250px;
+	height:40px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	opacity:0.6;
+}
+
 @media(min-width:1000px){
 
     #mainBody{
@@ -190,16 +203,16 @@
 
     
 <div class="container main" id="mainBody">
-	<h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 80px;">Payment</h1>
+	<h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 20px;">Payment</h1>
 
 	<div class="row" id="row2">
-		<h4 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Total amount Due: Rs. 75, 148</h2>
-		<h4 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Minimum Payment: Rs. 16, 000</h2>
+		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Total amount Due: Rs. 75, 148</h6>
+		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Minimum Payment: Rs. 16, 000</h6>
 	</div>
 	
-<br><br>
+
 <hr>
-<br><br> 
+ 
 
     	<!-- <div class="row" id="row1"><h4>Select Credit Card to make the Payment</h4></div><br>
 		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%; font-size: 25px;" ><span class="r_inputs">Card 1</span></div>
@@ -207,21 +220,30 @@
 		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%;" ><span class="r_inputs">Card 2</span></div>
 <br><br>
 <br><br>   -->
-
+<br>
 		     
 	  	<div class="row" id="row3">
-			<div class="row"><h4>Select the Payment option you want to make:</h4></div><br><br><br>
-			<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Minimum Due</span></div>
+			<div class="row"><h5 style="text-align: center; font-weight: 600; opacity: 0.8;">Select the Payment option you want to make:</h5></div><br>
+			<!-- <div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Minimum Due</span></div>
 			<br>
 			<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Partial Payment</span></div>
 			<br>
-			<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Full Payment</span></div>
-		</div>		
-<br><br>
+			<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Full Payment</span></div> -->
+		</div>	
+			
+		<div class="row">
+			<select name="pay_op" class="s1">
+				<option value="0">---Select payment option---</option>
+				<option value="1">Minimum Payment</option>
+				<option value="2">Partial Payment</option>
+				<option value="3">Full Payment</option>
+			</select>
+		</div>
+		<br>
 <hr>
-<br><br>    
+
         <div class="row" id="row4">
-			<h4>Enter the amount</h4>
+			<h5 style="text-align: center; font-weight: 600; opacity: 0.8;">Enter the amount</h5>
 			<input type="text" placeholder="Amount in Rs.">
         </div>
     

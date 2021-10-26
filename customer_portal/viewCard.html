@@ -13,16 +13,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         body {
-    background-color: #ececed;
+    /* background-color: #ececed; */
+			background-color: white;
 }
 
 #mainBody {
     background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 10px 2px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    box-shadow: 0px 0px 5px 1px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     border-radius: 25px;
     
     /* background-color: #ececed; */
@@ -101,7 +102,7 @@
     width: 230px;
     min-height: 35px;
     max-height: 50px;
-    margin:10px 0px 10px;
+    margin:0px 0px 0px;
     border-radius: 10px;
     border:none;
     background-color: rgb(207, 207, 207);
@@ -199,27 +200,31 @@
 
 <div class="container"id="mainBody">
     
-<h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 50px;">View Card</h1>
+<h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 10px;">View Card</h1>
     
     <div class="otpArea">
-        <a href="#" class="otp1">Click here to send the OTP for viewing the card</a><br><br>
-        <div class="otp12">Enter the OTP:</div><br>
+        <a href="#" class="otp1">Click here to send the OTP for viewing the card</a><br>
+        <div class="otp12">Enter the OTP:</div>
         <input type="password" placeholder="OTP" class="inputField">
         <br>
     </div>
-    <br>
+    
     <hr>    
-    <br><br><br>
-    <img src="cardFront.PNG" width="60%" class="cardi" class="image-responsive">
     <br>
-    <img src="cardBack.PNG" width="60%" class="cardi" class="image-responsive"> 
-   
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="cardFront.PNG" width="80%" class="cardi" class="image-responsive">
+        </div>
+        <div class="col-sm-6">
+            <img src="cardBack.PNG" width="80%" class="cardi" class="image-responsive"> 
+        </div>
+    </div>
     
     
     
-    <a href="Dashboard_4.html" >
+    <!-- <a href="Dashboard_4.html" >
         <button id="last">Done</button><br>
-    </a>
+    </a> -->
 
 </div>
 

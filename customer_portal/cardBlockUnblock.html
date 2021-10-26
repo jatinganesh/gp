@@ -19,20 +19,21 @@
             text-decoration: none;
         }
         body {
-    background-color: #ececed;
+    /* background-color: #ececed; */
+			background-color: white;
 }
 #mainBody {
     background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 10px 2px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    box-shadow: 0px 0px 5px 1px;
+    padding-top: 1px;
+    padding-bottom: 20px;
 	border-radius: 25px;
     padding-left: 30px;
     /* background-color: #ececed; */
 }
-.main  h4 {
+.main  h5 {
 		font-weight: 600;
 		color: black;
 		opacity:0.8
@@ -96,7 +97,7 @@ input[type=radio] {
 		border-radius: 9px;
 		background-color:rgba(76, 77, 161, 0.918);
 		font-size: 18px;
-		margin: 60px auto 2px;
+		margin: 20px auto 2px;
 		height:45px;
 		border:none;
         }
@@ -107,7 +108,9 @@ input[type=radio] {
         }
         #aa {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
+        text-align: center;
+        opacity: 0.8;
     }
     #ab {
         /* margin-top: 50px;
@@ -130,6 +133,16 @@ input[type=radio] {
         margin-left: auto;
         margin-right: auto;
     }
+    select.s1{
+	width:250px;
+	height:40px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	opacity:0.6;
+}
     @media(min-width:1000px){
 
 #mainBody{
@@ -233,25 +246,31 @@ margin-right: auto;
 <!------------------------------------------------------------------------>
 
 <div class="container main" id="mainBody">
-	<h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 60px;">Card Block/Unblock</h1>
+	<h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 20px;">Card Block/Unblock</h1>
 
 	<div class="row" id="row2">
-		<h4 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Card is currently</h2>
-		<h4 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">UNBLOCKED</h2>
+		<h5 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Card is currently</h5>
+		<h5 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">UNBLOCKED</h5>
 	</div>
 	
-<br><br>
-<hr>
-<br><br> 
 
-    	<div class="row" id="row1"><h4>What would you like to do?</h4></div><br>
-		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%; font-size: 25px;" ><span class="r_inputs">Block</span></div>
+<hr><br>
+ 
+
+    	<div class="row" id="row1" style="text-align: center; font-weight: 600; opacity: 0.9    ;"><h5>What would you like to do?</h5></div><br>
+		<!-- <div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%; font-size: 25px;" ><span class="r_inputs">Block</span></div>
 		<br>
-		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%;" ><span class="r_inputs">Unblock</span></div>
-	
-<br><br>
+		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%;" ><span class="r_inputs">Unblock</span></div> -->
+        <div class="row">
+			<select name="card_op" class="s1">
+				<option value="0">---Select your option---</option>
+				<option value="1">BLOCK CARD</option>
+				<option value="2">UNBLOCK CARD</option>
+			</select>
+		</div>
+<br>
 <hr>
-<br><br>
+
     
     <div class="rest">
         <section id="aa">Please enter the reason for doing so</section><br>

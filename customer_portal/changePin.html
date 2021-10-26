@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    
+
     <title>Change Pin</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width initial-scale=1">
@@ -9,26 +9,31 @@
 <link rel="stylesheet" href="header-footer.css">
 <style>
         body {
-       
+
             border: 0px solid rgb(19, 12, 10);
-            margin: 0px; 
+            margin: 0px;
             font-family: Arial, Helvetica, sans-serif;
         }
         body {
-    background-color: #ececed;
+    /* background-color: #ececed; */
+			background-color: white;
+}
+.row {
+    margin-bottom: 5px;
 }
 
 #mainBody {
     background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 10px 2px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    box-shadow: 0px 0px 5px 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 25px;
-    
+
     /* background-color: #ececed; */
 }
+
 
         a{
             text-decoration: none;
@@ -37,7 +42,7 @@
         font-size: 2em;
         font-weight: 500;
         text-shadow: 2px 2px 2px rgb(146, 145, 145);
-        
+
     }
     .fix {
         position:sticky;
@@ -45,7 +50,7 @@
     }
     .navbar {
         border:3px solid rgba(0, 0, 0, 0.459);
-        
+
     }
 
         .but2 {
@@ -56,7 +61,7 @@
     border-radius: 9px;
     background-color: rgba(76, 77, 161, 0.918);
     font-size: 18px;
-    margin:80px auto 10px;
+    margin:0px auto 0px;
     /* box-shadow: 2px 2px 2px black; */
     height:45px;
     border:none;
@@ -66,8 +71,8 @@
             width:100%;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 60px;
-            
+            margin-bottom: 30px;
+
         }
         .otp1 {
             font-size: 22px;
@@ -99,11 +104,11 @@
             font-size: 20px;
             font-weight: 600;
             opacity:0.9;
-            display: block;
+            /* display: block; */
             margin-left: auto;
             margin-right: auto;
         }
-        
+
 
         .row{
             height:80px;
@@ -116,7 +121,7 @@ header {
 }
 @media(min-width:1200px){
         #mainBody{
-            width:70%
+            width:60%
         }
 }
 @media(max-width:400px)
@@ -127,26 +132,26 @@ header {
 }
 
     </style>
-    
-</head>             
+
+</head>
 
 <body >
 
     <div id="language"><a href="login_customer.html" class="a1">Logout</a>&nbsp;&nbsp;&nbsp;<a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a></div>
 	<header>
-  
+
 		  <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
 		  <div id="nav-cont" class="container-fluid">
-  
+
 			  <a class="navbar-brand" href="Dashboard_4.html">
-			  <img id="logo-img" src="logonew.png" width="200px" height="100px">    
+			  <img id="logo-img" src="logonew.png" width="200px" height="100px">
 			  </a>
-  
+
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">           
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item dropdown">
 					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Overview
@@ -156,7 +161,7 @@ header {
 						  <li><a class="dropdown-item" href="accountSummary.html">Account Summary</a></li>
 					  </ul>
 				   </li>
-  
+
 				  <li class="nav-item dropdown">
 					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Accounts
@@ -166,7 +171,7 @@ header {
 						  <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
 					  </ul>
 				  </li>
-  
+
 				  <li class="nav-item dropdown">
 					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Payment
@@ -175,7 +180,7 @@ header {
 						  <li><a class="dropdown-item" href="payment_1.html">Make Payment</a></li>
 					  </ul>
 				  </li>
-  
+
 				  <li class="nav-item dropdown">
 					  <a class="nav-link dropdown-toggle" id="nav-highL" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Card Details
@@ -186,7 +191,7 @@ header {
 						  <li><a class="dropdown-item" href="cardBlockUnblock.html">Card Block/Unblock</a></li>
 					  </ul>
 				  </li>
-  
+
 				  <li class="nav-item dropdown">
 					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Customer Support
@@ -204,48 +209,54 @@ header {
 
 <!------------------------------------------------------------------------>
 <div class="container"id="mainBody">
-    
+
             <h1 style="text-align: center;font-weight: 600;margin-top: 0px;">Change Pin</h1>
-            <br><br><br>
-            <!-- ----------------------------------------------------------------- --> 
+            <br><hr>
+            <div class="module row">
+                <div class="col-md-5">
+                    <div style="padding-top: 10px;">Enter Phone Number</div>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Ph. No." class="inputField2"><br>
+                </div>
+            </div>
+
+            <!-- <br> -->
+
+            <div class="module row">
+                <div class="col-md-5">
+                    <div style="padding-top: 10px;">Enter Your preferred pin No.</div>
+                </div>
+                <div class="col-md-4">
+                    <input type="password"  class="inputField2" placeholder="New Pin">
+                </div>
+            </div>
+
+            <!-- <br> -->
+
+            <div class="module row">
+                <div class="col-md-5">
+                    <div style="padding-top: 10px;">Re-Enter the pin Number</div>
+                </div>
+                <div class="col-md-4">
+                    <input type="password" class="inputField2"  placeholder="Re-enter New Pin">
+                </div>
+            </div>
+            <hr>
             <div class="otpArea">
-                <a href="#" class="otp1">Click here to send the OTP for viewing the card</a><br><br>
-                <div class="otp12">Enter the OTP:</div><br>
+                <a href="#" class="otp1">Click here to send the OTP for viewing the card</a><br>
+                <div class="otp12">Enter the OTP:</div>
                 <input type="password" placeholder="OTP" class="inputField">
                 <br>
-            </div>  
-            <hr><br><br>
-            <div class="module">
-                
-                <div>Enter Phone Number</div><br>
-                <input type="text" placeholder="Ph. No." class="inputField2"><br>
-                
             </div>
-            <br>
 
-            <div class="module">
-                
-                <span>Enter Your preferred pin No.</span><br><br>
-                <input type="password"  class="inputField2" placeholder="New Pin">
-                
-            </div>
-            <br>
-
-            <div class="module">
-                
-                <span>Re-Enter the pin Number</span><br><br>
-                <input type="password" class="inputField2"  placeholder="Re-enter New Pin">
-                
-            </div>
-            <br>
-            
         <!-- ----------------------------------------------------------------- -->
             <a href="Dashboard_4.html" >
                 <button class="but2">Submit</button><br>
             </a>
 
             <!----------------------FOOTER START------------------------>
-    
+
 </div>
 
 
@@ -258,15 +269,15 @@ header {
                 <div class="foo-block">
                    <div id="text-2" class="widget widget-footer widget_text">
                       <div class="textwidget">
-                         
+
                          <img class="size-full wp-image-665" src="logonew.png" alt="MCW" width="200" height="100">
-                       
+
                       </div>
                    </div>
                 </div>
-                
+
              </div>
-            
+
              <!-- COLUMN 4 -->
              <div class="col-md-3">
                 <div class="foo-block foo-last">
@@ -283,7 +294,7 @@ header {
                       </div>
                    </div>
                 </div>
-             
+
              </div>
 
              <!-- COLUMN 3 -->
@@ -301,9 +312,9 @@ header {
                       </div>
                    </div>
                 </div>
-                
+
              </div>
-             
+
              <!-- COLUMN 2 -->
              <div class="col-md-3">
                 <div class="foo-block">
@@ -312,16 +323,16 @@ header {
                       <div class="textwidget">
                          <p>No 148-a, Crossroad juction Road<br>James Street, R D V Nagar , Fifth Phase<br>Bangalore 560084
                          </p>
-                         
+
                       </div>
                    </div>
                 </div>
-                
+
              </div>
           </div>
-          
+
        </div>
-       
+
        <div class="copyright">
           <div class="footer-copy">
              <p>Copyright © 2020.</p>
