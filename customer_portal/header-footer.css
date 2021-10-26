@@ -8,6 +8,9 @@ a.a1 {
 a {
     text-decoration: none;
 }
+header .nav-link:hover, header .nav-link:active, header .nav-link:visited, header .nav-link:link{
+    color: rgba(255, 255, 255, 0.836) !important;
+}
 ul {
     list-style-type: none;
     padding-left: 10px;
@@ -93,6 +96,9 @@ z-index: 2;
     border-radius: 15px;
     box-shadow: 1px 0px 5px 1px inset;
 }
+/* #nav-highL:hover, #nav-highL:active {
+    color:red;
+} */
 /* ------------------------------------------------MAINBODY END------------------------------------------------ */
 
 
@@ -101,13 +107,16 @@ z-index: 2;
 
 /*************************************   FOOTER   ***********************************/
 
-footer{padding:40px 0 10px 0;
+footer{padding:20px 0 0px 0;
     margin-top:10px;
-    background:#191947;}
+    background:#191947;
+    position: relative;
+    bottom: 0px;
+}
     
     footer, footer a, .footer-social li a{color:#999999;}
     
-    .foo-block, .widget-footer{margin-bottom:36px;}
+    .foo-block, .widget-footer{margin-bottom:10px;}
     .foo-block .widgettitle{ color:#ffffff; }
     
     .copyright{margin-top:18px;
@@ -124,7 +133,14 @@ footer{padding:40px 0 10px 0;
 
 
 
-
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        margin-top: auto;
+    }
 
 
  /* ------------------------------------------------OLD FOOTER------------------------------------------------ */
