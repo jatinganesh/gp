@@ -56,17 +56,20 @@
 /* --------------------------------------------*/
 .dropbtn {
     display: block;
-    width:230px;
-    color:white;
+    width:100%;
+    color:rgb(0, 0, 0);
+    padding:10px;
     font-weight: 600;
     border-radius: 0px;
-    background-color:rgba(116, 118, 255, 0.76);
+    background-color:rgba(116, 118, 255, 0.356);
     font-size: 18px;
-    margin:0px auto 50px;
+    margin:6px auto 50px;
     border-radius: 10px;
     /* box-shadow: 2px 2px 2px black; */
-    height:62px;
+    /* height:50px; */
     border:none;
+    font-weight: 600;
+    opacity: 0.7;
 }
 .btn.btn-primary{
     background-color: rgba(116, 118, 255, 0.63);
@@ -88,7 +91,7 @@
         /* --------------------------------------------*/
     .download_but {
         background-color: rgba(76, 77, 161, 0.918);
-        width:270px;
+        width:240px;
         height:60px;
         text-align: center;
         border-radius: 10px;
@@ -121,7 +124,7 @@
 <body >
 
     
-    <div id="language"><a href="login_customer.html" class="a1">Logout</a>&nbsp;&nbsp;&nbsp;<a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a></div>
+    <div id="language"><a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a>&nbsp;&nbsp;&nbsp;<a href="login_customer.html" class="a1">Logout</a></div>
 	<header>
   
         <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -194,8 +197,8 @@
 <!------------------------------------------------------------------------>
 
 <div class="container" id="mainBody">
-    <h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 30px;">Statement Download</h1>
-        <a href="#">
+    <h2 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 30px;">Statement Download</h2>
+        <!-- <a href="#">
             <div class="download_but">
                 <span class="db_text">Latest Statement</span>
                 <img src="downloadIcon.png" height="40px" width="40px" class="di">
@@ -205,7 +208,7 @@
 
         <div class="row">
                     <h2 class="h2_sd" style="text-align: center; font-weight: 600; opacity:0.7;"> OR </h2>
-        </div>
+        </div> -->
 
         <br><br>
 
@@ -213,7 +216,7 @@
             
                 <div class="col-sm-6">
                     <button class="dropbtn but2 col-sm-6">
-                        <div id="choose_month">Choose: <input type="month">
+                        <div id="choose_month">Month and Year <input type="month" value="2021-10" size="20">
                         </div>
                     </button>
                 </div>
@@ -221,7 +224,7 @@
                 <div class="col-sm-6">
                     <a href="#">
                         <div class="download_but col-sm-6">
-                            <span class="db_text">Selected Statement</span>
+                            <span class="db_text">Download</span>
                             <img src="downloadIcon.png" height="40px" width="40px" class="di">
                         </div>
                     </a>
@@ -315,5 +318,9 @@
 
     <script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.js"></script>
             <script src="bootstrap-5.1.0-dist\js\bootstrap.min.js"></script>
+    <script>
+        var x = document.getElementById("myMonth");
+
+    </script>
 
 </body>

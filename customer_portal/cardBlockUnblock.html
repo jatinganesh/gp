@@ -33,7 +33,7 @@
     padding-left: 30px;
     /* background-color: #ececed; */
 }
-.main  h5 {
+.main  h6 {
 		font-weight: 600;
 		color: black;
 		opacity:0.8
@@ -42,12 +42,22 @@
 	text-align: center;
 }
 input[type=radio] {
-    width: 30px;
-    height: 30px;
+    /* width: 40px; */
+    height: 17px;
 	padding-left: 50px;
+    /* font-size: 25px; */
+    /* width: 20px;
+    height: 20px;
+	padding-left: 50px; */
+}
+.radio_zone {
+    width:250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .r_inputs {
-		font-size: 24px;
+		font-size: 17px;
 		padding-left: 20px;
 		width:30%;
 		clear:right;
@@ -107,10 +117,10 @@ input[type=radio] {
             margin-top: 200px;
         }
         #aa {
-        font-weight: bold;
-        font-size: 20px;
+        /* font-weight: bold; */
+        font-size: 19px;
         text-align: center;
-        opacity: 0.8;
+        opacity: 0.83;
     }
     #ab {
         /* margin-top: 50px;
@@ -120,7 +130,7 @@ input[type=radio] {
     background-color: rgba(74, 53, 94, 0.253);
     border:none;
 	width:250px;
-	height:50px;
+	height:45px;
     text-align: center;
     
     }
@@ -157,7 +167,7 @@ margin-left: 50px;
 margin-right: auto;
 }
 .r_inputs{
-    font-size: 18px;
+    font-size: 16px;
 }
 #mainBody{
     padding-left:5px;
@@ -173,7 +183,7 @@ margin-right: auto;
 <body >
 
         <!------------------------------------------------------------------------>
-        <div id="language"><a href="login_customer.html" class="a1">Logout</a>&nbsp;&nbsp;&nbsp;<a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a></div>
+        <div id="language"><a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a>&nbsp;&nbsp;&nbsp;<a href="login_customer.html" class="a1">Logout</a></div>
 		<header>
   
             <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -246,30 +256,32 @@ margin-right: auto;
 <!------------------------------------------------------------------------>
 
 <div class="container main" id="mainBody">
-	<h1 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 20px;">Card Block/Unblock</h1>
+	<h2 style="text-align: center;font-weight: 600;margin-top: 30px; margin-bottom: 20px;">Card Block/Unblock</h2>
 
 	<div class="row" id="row2">
-		<h5 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Card is currently</h5>
-		<h5 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">UNBLOCKED</h5>
+		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Card is currently</h6>
+		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">UNBLOCKED</h6>
 	</div>
 	
 
-<hr><br>
+<hr>
  
 
     	<div class="row" id="row1" style="text-align: center; font-weight: 600; opacity: 0.9    ;"><h5>What would you like to do?</h5></div><br>
-		<!-- <div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%; font-size: 25px;" ><span class="r_inputs">Block</span></div>
-		<br>
-		<div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:5%;" ><span class="r_inputs">Unblock</span></div> -->
-        <div class="row">
+            <div class="radio_zone">
+                <div class="row radio-div"><input type='radio' name='option' value='6/24' style="width:7%;"><span class="r_inputs">Block</span></div>
+                
+                <div class="row radio-div" style="margin-top: 5px;"><input type='radio' name='option' value='6/24' style="width:7%;" ><span class="r_inputs">Unblock</span></div>
+            </div>
+        <!-- <div class="row">
 			<select name="card_op" class="s1">
 				<option value="0">---Select your option---</option>
 				<option value="1">BLOCK CARD</option>
 				<option value="2">UNBLOCK CARD</option>
 			</select>
-		</div>
+		</div> -->
 <br>
-<hr>
+
 
     
     <div class="rest">

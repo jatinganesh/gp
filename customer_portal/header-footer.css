@@ -44,7 +44,7 @@ padding-right: 20px;
 background-color:rgba(25, 25, 104, 0);
 position: absolute;
 top:0px;
-right:78px;
+right:20px;
 z-index: 2;
 }
 #logo-img {
@@ -127,6 +127,12 @@ footer{padding:20px 0 0px 0;
     flex:1 1 auto;}
     
     .footer-social{text-align:right;}
+    .textwidget {
+        font-size: 14px;
+    }
+    .widgettitle {
+        font-size:18px;
+    }
     
     /************************************************************************
     **************************************************************************/

@@ -55,37 +55,46 @@
 	footer .row {
 		height:auto;
 	}
-	.r_inputs {
-		font-size: 24px;
+	
+	input[type=radio] {
+    width: 30px;
+    height: 20px;
+	padding-left: 50px;
+}
+.radio_zone {
+    width:250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.r_inputs {
+		font-size: 16px;
 		padding-left: 20px;
-		width:50%;
+		width:200px;
 		clear:right;
 		position: relative;
 		top:-3px;
 	}
-	input[type=radio] {
-    width: 30px;
-    height: 30px;
-	padding-left: 50px;
-}
 #row4 input {
 	border-radius: 10px;
     background-color: rgba(74, 53, 94, 0.253);
     border:none;
-	width:250px;
-	height:50px;
+	max-width:250px;
+	height:35px;
+	padding-left: 10px;
 }
 .h2_p1{
 	text-align: center;
 }
 .radio-div {
 	/* text-align: center; */
-	margin-left: 50px;
+	margin-left: 0px;
 	margin-right: auto;
+	margin-bottom: 7px;
 }
 #row4 {
-	text-align: center;
-	display: block;
+	text-align: left;
+	/* display: block; */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -115,7 +124,7 @@ select.s1{
 	margin-right: auto;
 }
 	.r_inputs{
-		font-size: 18px;
+		font-size: 15px;
 	}
 }
 
@@ -127,7 +136,7 @@ select.s1{
 
 <body >
 
-	<div id="language"><a href="login_customer.html" class="a1">Logout</a>&nbsp;&nbsp;&nbsp;<a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a></div>
+	<div id="language"><a href="profilepage.html"><img src="dp_2.jpg" width="40px" height="27px" style="border-radius: 15px;"></a>&nbsp;&nbsp;&nbsp;<a href="login_customer.html" class="a1">Logout</a></div>
 	<header>
   
 		<nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -203,11 +212,12 @@ select.s1{
 
     
 <div class="container main" id="mainBody">
-	<h1 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 20px;">Payment</h1>
+	<h2 style="text-align: center;font-weight: 600;margin-top: 0px; margin-bottom: 20px;">Payment</h2>
 
 	<div class="row" id="row2">
 		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Total amount Due: Rs. 75, 148</h6>
 		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Minimum Payment: Rs. 16, 000</h6>
+		<h6 class="h2_p1" style="color: rgba(155, 5, 5, 0.774);">Payment Due Date: 24 Decemeber 2021</h6>
 	</div>
 	
 
@@ -223,28 +233,35 @@ select.s1{
 <br>
 		     
 	  	<div class="row" id="row3">
-			<div class="row"><h5 style="text-align: center; font-weight: 600; opacity: 0.8;">Select the Payment option you want to make:</h5></div><br>
-			<!-- <div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Minimum Due</span></div>
-			<br>
-			<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Partial Payment</span></div>
-			<br>
-			<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:5%;"><span class="r_inputs">Full Payment</span></div> -->
+				<div class="row"><h6 style="text-align: center; font-weight: 600; opacity: 0.8; margin-bottom: 18px;">Select the Payment option you want to make:</h6></div><br>
+
+				<div class="radio_zone">
+					<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:7%;"><span class="r_inputs">Minimum Due</span></div>
+					
+					<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:7%;"><span class="r_inputs">Partial Payment</span></div>
+					
+					<div class="row radio-div"><input type='radio' name='option2' value='6/24' style="width:7%;"><span class="r_inputs">Full Payment</span></div>
+				</div>
 		</div>	
 			
-		<div class="row">
+		<!-- <div class="row">
 			<select name="pay_op" class="s1">
 				<option value="0">---Select payment option---</option>
 				<option value="1">Minimum Payment</option>
 				<option value="2">Partial Payment</option>
 				<option value="3">Full Payment</option>
 			</select>
-		</div>
+		</div> -->
 		<br>
-<hr>
+
 
         <div class="row" id="row4">
-			<h5 style="text-align: center; font-weight: 600; opacity: 0.8;">Enter the amount</h5>
-			<input type="text" placeholder="Amount in Rs.">
+			<div class="col-md-6">
+				<h6 style="text-align: right; font-weight: 600; opacity: 0.8;">Enter the amount</h6>
+			</div>
+			<div class="col-md-6">
+				<input type="text" placeholder="Amount in Rs." style="margin-left: 0px;">
+			</div>
         </div>
     
     
